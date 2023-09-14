@@ -1,0 +1,13 @@
+#public
+public/*
+!public/.gitkeep
+
+#tmp
+tmp/*
+!tmp/.gitkeep
+
+#node_modules
+node_modules/
+.env
+.idea
+.vscode
