@@ -2,7 +2,7 @@ const express = require("express");
 
 const app = express();
 
-app.get("/api", (req, res) => res.send("test"));
+app.get("/api", (req, res) => res.send("test 123"));
 
 app.use((req, res) => res.status(404).send({ message: "Not found" }));
 
@@ -14,4 +14,4 @@ app.use((err, req, res, next) => {
 
 app.listen(3333);
 
-// module.exports = app;
+module.exports = app;
