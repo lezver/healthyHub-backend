@@ -12,6 +12,4 @@ app.use((err, req, res, next) => {
 	return res.status(status).send({ message });
 });
 
-app.listen(3333);
-
 module.exports = app;
