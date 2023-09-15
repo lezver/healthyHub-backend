@@ -4,8 +4,8 @@
 	"description": "",
 	"main": "index.js",
 	"scripts": {
-		"start": "node -r dotenv/config server.js",
-		"start:dev": "node --watch -r dotenv/config server.js"
+		"start": "node server.js",
+		"start:dev": "node --watch server.js"
 	},
 	"keywords": [],
 	"author": "",
