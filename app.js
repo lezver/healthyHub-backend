@@ -2,7 +2,7 @@ const express = require("express");
 
 const app = express();
 
-app.get("/api", (req, res) => res.send("test 123 456"));
+app.get("/api", (req, res) => res.send("test 123 456 789"));
 
 app.use((req, res) => res.status(404).send({ message: "Not found" }));
 
