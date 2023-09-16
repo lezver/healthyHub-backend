@@ -6,6 +6,7 @@ const { handleMongooseError } = require("../helpers");
 const emailRegexp = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
 
 const userSchema = new Schema(
+
 	{
 		name: {
 			type: String,
@@ -48,6 +49,7 @@ const userSchema = new Schema(
 		},
 	},
 	{ versionKey: false, timestamps: true }
+
 );
 
 userSchema.post("save", handleMongooseError);
