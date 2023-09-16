@@ -1,3 +1,8 @@
-const { User, registerSchema, loginSchema } = require("./user");
+const {
+	User,
+	registerSchema,
+	loginSchema,
+	physicalDataSchema,
+} = require("./user");
 
-module.exports = { User, registerSchema, loginSchema };
+module.exports = { User, registerSchema, loginSchema, physicalDataSchema };

@@ -27,10 +27,10 @@ const userSchema = new Schema(
 			type: Boolean,
 			default: false,
 		},
-		// verificationToken: {
-		// 	type: String,
-		// 	required: [true, "Verify token is required"],
-		// },
+		verificationToken: {
+			type: String,
+			required: [true, "Verify token is required"],
+		},
 		goal: {
 			type: String,
 			enum: ["Lose Fat", "Maintain", "Gain Muscle"],
@@ -63,6 +63,16 @@ const loginSchema = Joi.object({
 	password: Joi.string().min(5).required(),
 });
 
+const physicalDataSchema = Joi.object({
+	email: Joi.string().required(),
+	goal: Joi.string().required(),
+	gender: Joi.string().required(),
+	age: Joi.number().required(),
+	height: Joi.number().required(),
+	weight: Joi.number().required(),
+	activity: Joi.number().required(),
+});
+
 const User = model("user", userSchema);
 
-module.exports = { User, registerSchema, loginSchema };
+module.exports = { User, registerSchema, loginSchema, physicalDataSchema };
