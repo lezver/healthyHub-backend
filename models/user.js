@@ -22,6 +22,7 @@ const userSchema = new Schema(
       required: true,
     },
     token: String,
+    ownerId: String,
   },
   { versionKey: false, timestamps: true }
 );
