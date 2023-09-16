@@ -6,6 +6,8 @@ const app = express();
 
 app.use(cors());
 
+app.use(express.static("public"));
+
 app.use("/api", routes);
 
 app.use((req, res) => res.status(404).send({ message: "Not found" }));

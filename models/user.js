@@ -22,15 +22,15 @@ const userSchema = new Schema(
 			required: true,
 		},
 		token: String,
-		avatar: String,
+		avatarURL: String,
 		verify: {
 			type: Boolean,
 			default: false,
 		},
-		verificationToken: {
-			type: String,
-			required: [true, "Verify token is required"],
-		},
+		// verificationToken: {
+		// 	type: String,
+		// 	required: [true, "Verify token is required"],
+		// },
 		goal: {
 			type: String,
 			enum: ["Lose Fat", "Maintain", "Gain Muscle"],
