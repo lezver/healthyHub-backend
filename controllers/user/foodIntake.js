@@ -15,7 +15,7 @@ const foodIntake = async (req, res) => {
     ownerId,
   } = req.body;
 
-  const checkUser = await User.find({ ownerId: ownerId }).exec();
+  const checkUser = await User.find({ _id: ownerId }).exec();
 
   if (!checkUser[0]) throw httpError(409, "User not found");
 

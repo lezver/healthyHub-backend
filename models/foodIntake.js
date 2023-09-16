@@ -4,42 +4,46 @@ const mongoose = require("mongoose");
 const Joi = require("joi");
 const { handleMongooseError } = require("../helpers");
 
-const foodIntakeSchema = new Schema({
-  name: {
-    type: String,
-    required: true,
+const foodIntakeSchema = new Schema(
+  {
+    name: {
+      type: String,
+      required: true,
+    },
+    carbonohidrates: {
+      type: Number,
+      required: true,
+    },
+    protein: {
+      type: Number,
+      required: true,
+    },
+    fat: {
+      type: Number,
+      required: true,
+    },
+    calories: {
+      type: Number,
+      required: true,
+    },
+    // date: {
+    //   type: String,
+    //   required: true,
+    // },
+    meals: {
+      type: String,
+      required: true,
+    },
+    ownerId: {
+      type: String,
+      // ref: "User",
+    },
   },
-  carbonohidrates: {
-    type: Number,
-    required: true,
-  },
-  protein: {
-    type: Number,
-    required: true,
-  },
-  fat: {
-    type: Number,
-    required: true,
-  },
-  calories: {
-    type: Number,
-    required: true,
-  },
-  date: {
-    type: String,
-    required: true,
-  },
-  meals: {
-    type: String,
-    required: true,
-  },
-  ownerId: {
-    // type: mongoose.Schema.ObjectId,
-    type: String,
-
-    required: true,
-  },
-});
+  {
+    versionKey: false,
+    timestamps: true,
+  }
+);
 
 foodIntakeSchema.post("save", handleMongooseError);
 
@@ -51,7 +55,7 @@ const newFoodIntakeSchema = Joi.object({
   protein: Joi.number().required(),
   fat: Joi.number().required(),
   calories: Joi.number().required(),
-  date: Joi.date().required(),
+  // date: Joi.date().required(),
   meals: Joi.string().required(),
 });
 

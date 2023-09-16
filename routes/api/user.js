@@ -9,7 +9,9 @@ const {
 const { validateBody } = require("../../middlewares");
 const { registerSchema, loginSchema } = require("../../models");
 const { FoodIntake } = require("../../models/foodIntake");
-
+const {
+  statisticsLastMonth,
+} = require("../../controllers/user/statisticsLastMonth");
 const router = express.Router();
 const jsonParser = express.json();
 
@@ -23,5 +25,6 @@ router.post(
   // validateBody(FoodIntake),
   foodIntake
 );
+router.post("/statistics-last-Month", jsonParser, statisticsLastMonth);
 
 module.exports = router;
