@@ -17,7 +17,6 @@ const daysInfo = async () => {
 };
 
 const createDays = async (req, body) => {
-    console.log(body);
     // const userId = req.user.id;
     // const newDay = await Day.create({ ...body, ownerId: userId, date: currentDate });
     // return newDay;
@@ -25,12 +24,8 @@ const createDays = async (req, body) => {
     return newDay;
 };
 
-const updateDays = async (dateToUpdate, updatedData) => {
-    const updatedDay = await Day.findOneAndUpdate({ date: { $gte: startOfDay, $lte: endOfDay } });
-
-    if (!updatedDay) {
-            return null;
-    };
+const updateDays = async (req, body) => {
+    const updatedDay = await Day.find({ date: { $gte: startOfDay, $lte: endOfDay } });
 
     return updatedDay;
     // const userId = req.user.id;
