@@ -23,7 +23,7 @@ const userSchema = new Schema(
 			required: true,
 		},
 		token: String,
-		avatar: String,
+		avatarURL: String,
 		verify: {
 			type: Boolean,
 			default: false,
@@ -65,6 +65,16 @@ const loginSchema = Joi.object({
 	password: Joi.string().min(5).required(),
 });
 
+const physicalDataSchema = Joi.object({
+	email: Joi.string().required(),
+	goal: Joi.string().required(),
+	gender: Joi.string().required(),
+	age: Joi.number().required(),
+	height: Joi.number().required(),
+	weight: Joi.number().required(),
+	activity: Joi.number().required(),
+});
+
 const User = model("user", userSchema);
 
-module.exports = { User, registerSchema, loginSchema };
+module.exports = { User, registerSchema, loginSchema, physicalDataSchema };
