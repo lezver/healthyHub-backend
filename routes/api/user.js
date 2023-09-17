@@ -19,6 +19,8 @@ router.post("/register", jsonParser, validateBody(registerSchema), register);
 router.post("/login", jsonParser, validateBody(loginSchema), login);
 router.post("/logout", logout);
 router.get("/current", current);
+router.post("/day", jsonParser, dayController.createDay);
+router.put("/day", jsonParser, dayController.updateDay);
 router.post(
   "/food-intake",
   jsonParser,
