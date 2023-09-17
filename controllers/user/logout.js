@@ -1,5 +1,5 @@
 const { wrapperError } = require("../../helpers");
-const { User } = require("../../models");
+const { User } = require("../../models/user");
 
 const logout = async (req, res) => {
 	const { _id } = req.user;

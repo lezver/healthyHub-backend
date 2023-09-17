@@ -1,5 +1,5 @@
 const { wrapperError, httpError } = require("../../helpers");
-const { User } = require("../../models");
+const { User } = require("../../models/user");
 
 const checkEmailUser = async (req, res) => {
 	const { email } = req.body;

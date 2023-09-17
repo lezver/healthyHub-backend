@@ -1,6 +1,8 @@
 #public
 public/*
-!public/.gitkeep
+!public/avatars
+!public/avatars/.gitkeep
+
 
 
 #tmp

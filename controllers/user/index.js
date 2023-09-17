@@ -4,7 +4,6 @@ const { logout } = require("./logout");
 const { current } = require("./current");
 const { updateAvatar } = require("./updateAvatar");
 const { checkEmailUser } = require("./checkEmailUser");
-const { foodIntake } = require("./foodIntake");
 
 module.exports = {
 	register,
@@ -13,5 +12,4 @@ module.exports = {
 	current,
 	updateAvatar,
 	checkEmailUser,
-	foodIntake,
 };

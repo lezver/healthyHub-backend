@@ -1,7 +1,7 @@
 const { wrapperError, httpError } = require("../../helpers");
 const { rename } = require("node:fs/promises");
 const path = require("node:path");
-const { User } = require("../../models");
+const { User } = require("../../models/user");
 
 const avatarDir = path.join(__dirname, "..", "..", "public", "avatars");
 
