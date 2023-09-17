@@ -1,3 +1,4 @@
+const { json } = require('express');
 const current = require('../../controllers/user/current');
 const Day = require('../../schemas/day');
 // const formatDate = require('../../utils/dateutils');
@@ -20,6 +21,10 @@ const createDays = async (req, body) => {
     // const userId = req.user.id;
     // const newDay = await Day.create({ ...body, ownerId: userId, date: currentDate });
     // return newDay;
+    const day = await Day.find({ date: { $gte: startOfDay, $lte: endOfDay } });
+    if (day.length !== 0) {
+        return null;
+    }
     const newDay = await Day.create({ ...body, date: currentDate});
     return newDay;
 };
