@@ -1,6 +1,6 @@
-const mongoose = require('mongoose');
+const { Schema, model } = require("mongoose");
 
-const daySchema = new mongoose.Schema({
+const foodSchema = new Schema({
     name: {
         type: String,
         required: true,
@@ -35,4 +35,6 @@ const daySchema = new mongoose.Schema({
     },
 });
 
-module.exports = mongoose.model("food", foodSchema);
+const Food = model("food", foodSchema);
+
+module.exports = Food;
