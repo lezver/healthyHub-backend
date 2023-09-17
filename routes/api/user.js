@@ -22,10 +22,6 @@ const {
 	statisticsLastMonth,
 } = require("../../controllers/user/statisticsLastMonth");
 
-const {
-  statisticsLastMonth,
-} = require("../../controllers/user/statisticsLastMonth");
-
 const dayController = require("../../controllers/day");
 
 const router = express.Router();
