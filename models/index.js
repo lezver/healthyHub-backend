@@ -4,5 +4,6 @@ const {
 	loginSchema,
 	physicalDataSchema,
 } = require("./user");
+const { FoodIntake } = require("./foodIntake");
 
-module.exports = { User, registerSchema, loginSchema, physicalDataSchema };
+module.exports = { User, registerSchema, loginSchema, physicalDataSchema, FoodIntake };

@@ -6,6 +6,7 @@ const { updateAvatar } = require("./updateAvatar");
 const { verifyEmail } = require("./verifyEmail");
 const { resendVerifyEmail } = require("./resendVerifyEmail");
 const { physicalData } = require("./physicalData");
+const { foodIntake } = require("./foodIntake");
 
 module.exports = {
 	register,
@@ -16,4 +17,5 @@ module.exports = {
 	verifyEmail,
 	resendVerifyEmail,
 	physicalData,
+  foodIntake,
 };
