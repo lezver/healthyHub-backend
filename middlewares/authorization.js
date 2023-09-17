@@ -8,9 +8,9 @@ const noProvide = "No authorized";
 const auth = async (req, res, next) => {
 	const { authorization = "" } = req.headers;
 
-	const [bearer, token] = authorization?.split(" ");
+	const [bearer, token] = authorization.split(" ");
 
-	if (!bearer || !token) return next(httpError(401, noProvide));
+	if (!bearer) return next(httpError(401, noProvide));
 
 	try {
 		const { id } = jwt.verify(token, SECRET_KEY);
@@ -21,7 +21,7 @@ const auth = async (req, res, next) => {
 
 		req.user = user;
 
-		next();
+		return next();
 	} catch {
 		return next(httpError(401, noProvide));
 	}
