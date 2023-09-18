@@ -8,8 +8,8 @@
 		"start:dev": "node --watch -r dotenv/config server.js"
 	},
 	"engines": {
-    		"node": ">=15"
-  	},
+		"node": ">=15"
+	},
 	"keywords": [],
 	"author": "",
 	"license": "ISC",
