@@ -34,20 +34,20 @@ const userSchema = new Schema(
 			required: true,
 		},
 		age: {
-			type: Number,
+			type: String,
 			required: true,
 		},
 		height: {
-			type: Number,
+			type: String,
 			required: true,
 		},
 		weight: {
-			type: Number,
+			type: String,
 			required: true,
 		},
 		activity: {
-			type: Number,
-			enum: [1.2, 1.375, 1.55, 1.725, 1.9],
+			type: String,
+			enum: ["1.2", "1.375", "1.55", "1.725", "1.9"],
 			required: true,
 		},
 	},
@@ -62,10 +62,10 @@ const registerSchema = Joi.object({
 	password: Joi.string().min(5).required(),
 	goal: Joi.string().required(),
 	gender: Joi.string().required(),
-	age: Joi.number().required(),
-	height: Joi.number().required(),
-	weight: Joi.number().required(),
-	activity: Joi.number().required(),
+	age: Joi.string().required(),
+	height: Joi.string().required(),
+	weight: Joi.string().required(),
+	activity: Joi.string().required(),
 });
 
 const loginSchema = Joi.object({
@@ -73,10 +73,30 @@ const loginSchema = Joi.object({
 	password: Joi.string().min(5).required(),
 });
 
-const checkEmailUserSchema = Joi.object({
+const emailSchema = Joi.object({
 	email: Joi.string().required(),
+});
+
+const goalSchema = Joi.object({
+	goal: Joi.string().required(),
+});
+
+const settingsSchema = Joi.object({
+	name: Joi.string().required(),
+	gender: Joi.string().required(),
+	age: Joi.string().required(),
+	height: Joi.string().required(),
+	weight: Joi.string().required(),
+	activity: Joi.string().required(),
 });
 
 const User = model("user", userSchema);
 
-module.exports = { User, registerSchema, loginSchema, checkEmailUserSchema };
+module.exports = {
+	User,
+	registerSchema,
+	loginSchema,
+	emailSchema,
+	goalSchema,
+	settingsSchema,
+};
