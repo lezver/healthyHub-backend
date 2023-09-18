@@ -1,7 +1,6 @@
 const daySchema = require("../../schemas/day");
 
 const { updateDays } = require("../../models/day/day");
-const formatDate = require('../../utils/dateutils');
 
 // const currentDate = new Date();
 

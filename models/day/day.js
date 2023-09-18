@@ -1,6 +1,7 @@
 const { json } = require('express');
 const current = require('../../controllers/user/current');
 const Day = require('../../schemas/day');
+const { updateDay } = require('../../controllers/day');
 // const formatDate = require('../../utils/dateutils');
 
 const currentDate = new Date();
@@ -39,8 +40,57 @@ const updateDays = async (req, body) => {
     
 };
 
+const updateBreakfasts = async(req, body) => {
+    const day = await Day.findOne({ date: { $gte: startOfDay, $lte: endOfDay } });
+
+    const existingBreakfast = [...day.breakfast];
+    console.log(existingBreakfast);
+    existingBreakfast.push(body);
+    day.breakfast = existingBreakfast;
+    const updatedDay = await day.save();
+
+    return updatedDay;
+};
+
+const updateLunchs = async(req, body) => {
+    const day = await Day.findOne({ date: { $gte: startOfDay, $lte: endOfDay } });
+
+    const existingLunch = [...day.lunch];
+    existingLunch.push(body);
+    day.lunch = existingLunch;
+    const updatedDay = await day.save();
+
+    return updatedDay;
+};
+
+const updateDiners = async(req, body) => {
+    const day = await Day.findOne({ date: { $gte: startOfDay, $lte: endOfDay } });
+
+    const existingDiner = [...day.diner];
+    existingDiner.push(body);
+    day.diner = existingDiner;
+    const updatedDay = await day.save();
+
+    return updatedDay;
+};
+
+const updateSnacks = async(req, body) => {
+    const day = await Day.findOne({ date: { $gte: startOfDay, $lte: endOfDay } });
+
+    const existingSnack = [...day.snack];
+    existingSnack.push(body);
+    day.snack = existingSnack;
+    const updatedDay = await day.save();
+
+    return updatedDay;
+};
+
 module.exports = {
     daysInfo,
     createDays,
     updateDays,
+    updateBreakfasts,
+    updateLunchs,
+    updateDiners,
+    updateSnacks,
 };

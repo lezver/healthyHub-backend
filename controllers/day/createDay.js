@@ -13,7 +13,7 @@ const createDay = async (req, res, next) => {
         const newDay = await createDays(req, req.body);
 
         if (newDay === null) {
-            return res.status(400).json({ message: "Day with the same date already exists" }); // Відповідь про існуючий день
+            return res.status(400).json({ message: "Day with the same date already exists" });
         }
 
         res.status(201).json(newDay);

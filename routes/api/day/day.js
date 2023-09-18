@@ -7,5 +7,9 @@ const router = express.Router();
 router.get("/day", jsonParser, dayController.dayInfo);
 router.post("/day", jsonParser, dayController.createDay);
 router.put("/day", jsonParser, dayController.updateDay);
+router.patch("/day/breakfast", jsonParser, dayController.updateBreakfast);
+router.patch("/day/lunch", jsonParser,  dayController.updateLunch);
+router.patch("/day/diner", jsonParser,  dayController.updateDiner);
+router.patch("/day/snack", jsonParser,  dayController.updateSnack);
 
 module.exports = router;
