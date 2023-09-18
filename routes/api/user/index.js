@@ -22,6 +22,7 @@ const router = express.Router();
 const jsonParser = express.json();
 
 router.post("/register", jsonParser, validateBody(registerSchema), register);
+
 router.post(
 	"/check-email",
 	jsonParser,
