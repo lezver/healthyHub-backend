@@ -2,6 +2,9 @@ const { wrapperError, httpError } = require("../../helpers");
 const { User } = require("../../models/user");
 const bcrypt = require("bcrypt");
 const gravatar = require("gravatar");
+const jwt = require("jsonwebtoken");
+
+const { SECRET_KEY } = process.env;
 
 const register = async (req, res) => {
 	const { name, email, password, goal, gender, age, height, weight, activity } =
@@ -27,7 +30,17 @@ const register = async (req, res) => {
 		activity,
 	});
 
-	return res.status(201).send(newUser);
+	const payload = { id: newUser._id };
+
+	const token = jwt.sign(payload, SECRET_KEY, { expiresIn: "23h" });
+
+	const addTokenToNewUser = await User.findByIdAndUpdate(
+		newUser._id,
+		{ token },
+		{ new: true }
+	).exec();
+
+	return res.status(201).send(addTokenToNewUser);
 };
 
 module.exports = { register: wrapperError(register) };
