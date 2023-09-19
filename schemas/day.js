@@ -5,16 +5,101 @@ const mongoose = require('mongoose');
 const daySchema = new mongoose.Schema({
     date: Date,
     calories: Number,    
-    water: [],
+    water: Number,
     weight: Number,
     isChanged: {
         type: Boolean,
         default: false,
     },
-    breakfast: [],
-    lunch: [],
-    diner: [],
-    snack: [],
+    breakfast: [
+        {
+            name: {
+                type: String,
+                required: true,
+            },
+            carbonohidrates: {
+                type: Number,
+                required: true,
+            },
+            protein: {
+                type: Number,
+                required: true,
+            },
+            fat: {
+                type: Number,
+                required: true,
+            },
+            calories: {
+                type: Number,
+                required: true,
+            },
+        },],
+    lunch: [{
+            name: {
+                type: String,
+                required: true,
+            },
+            carbonohidrates: {
+                type: Number,
+                required: true,
+            },
+            protein: {
+                type: Number,
+                required: true,
+            },
+            fat: {
+                type: Number,
+                required: true,
+            },
+            calories: {
+                type: Number,
+                required: true,
+            },
+        },],
+    diner: [{
+            name: {
+                type: String,
+                required: true,
+            },
+            carbonohidrates: {
+                type: Number,
+                required: true,
+            },
+            protein: {
+                type: Number,
+                required: true,
+            },
+            fat: {
+                type: Number,
+                required: true,
+            },
+            calories: {
+                type: Number,
+                required: true,
+            },
+        },],
+    snack: [{
+            name: {
+                type: String,
+                required: true,
+            },
+            carbonohidrates: {
+                type: Number,
+                required: true,
+            },
+            protein: {
+                type: Number,
+                required: true,
+            },
+            fat: {
+                type: Number,
+                required: true,
+            },
+            calories: {
+                type: Number,
+                required: true,
+            },
+        },],
     // ownerId: {
     //     type: mongoose.Schema.ObjectId,
     //     required: true,
