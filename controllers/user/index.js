@@ -4,7 +4,7 @@ const { logout } = require("./logout");
 const { current } = require("./current");
 const { updateAvatar } = require("./updateAvatar");
 const { checkEmailUser } = require("./checkEmailUser");
-const { chengeOfGoal } = require("./chengeOfGoal");
+const { changeOfGoal } = require("./changeOfGoal");
 const { changeSettings } = require("./changeSettings");
 
 module.exports = {
@@ -14,6 +14,6 @@ module.exports = {
 	current,
 	updateAvatar,
 	checkEmailUser,
-	chengeOfGoal,
+	changeOfGoal,
 	changeSettings,
 };

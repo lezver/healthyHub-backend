@@ -6,10 +6,10 @@ const {
 	current,
 	updateAvatar,
 	checkEmailUser,
-	chengeOfGoal,
+	changeOfGoal,
 	changeSettings,
 } = require("../../../controllers/user");
-const { validateBody, auth, upload } = require("../../../middlewares");
+const { validateBody, auth, uploadCloud } = require("../../../middlewares");
 const {
 	registerSchema,
 	loginSchema,
@@ -22,7 +22,6 @@ const router = express.Router();
 const jsonParser = express.json();
 
 router.post("/register", jsonParser, validateBody(registerSchema), register);
-
 router.post(
 	"/check-email",
 	jsonParser,
@@ -37,7 +36,7 @@ router.patch(
 	auth,
 	jsonParser,
 	validateBody(goalSchema),
-	chengeOfGoal
+	changeOfGoal
 );
 router.patch(
 	"/change-settings",
@@ -46,6 +45,6 @@ router.patch(
 	validateBody(settingsSchema),
 	changeSettings
 );
-router.patch("/avatars", auth, upload.single("avatar"), updateAvatar);
+router.post("/avatars", auth, uploadCloud.single("avatar"), updateAvatar);
 
 module.exports = router;

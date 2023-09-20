@@ -1,5 +1,5 @@
 const validateBody = require("./validateBody");
 const auth = require("./authorization");
-const upload = require("./upload");
+const uploadCloud = require("./upload");
 
-module.exports = { validateBody, auth, upload };
+module.exports = { validateBody, auth, uploadCloud };

@@ -1,7 +1,7 @@
 const { wrapperError, httpError } = require("../../helpers");
 const { User } = require("../../models/user");
 
-const chengeOfGoal = async (req, res) => {
+const changeOfGoal = async (req, res) => {
 	const { _id } = req.user;
 	const { goal } = req.body;
 
@@ -10,4 +10,4 @@ const chengeOfGoal = async (req, res) => {
 	return res.status(200).send({ message: goal });
 };
 
-module.exports = { chengeOfGoal: wrapperError(chengeOfGoal) };
+module.exports = { changeOfGoal: wrapperError(changeOfGoal) };
