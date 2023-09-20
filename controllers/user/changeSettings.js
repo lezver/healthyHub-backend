@@ -1,4 +1,4 @@
-const { wrapperError } = require("../../helpers");
+const { wrapperError, httpError } = require("../../helpers");
 const { User } = require("../../models/user");
 
 const changeSettings = async (req, res) => {
