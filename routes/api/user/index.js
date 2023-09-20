@@ -8,6 +8,7 @@ const {
 	checkEmailUser,
 	changeOfGoal,
 	changeSettings,
+	changePassword,
 } = require("../../../controllers/user");
 const { validateBody, auth, uploadCloud } = require("../../../middlewares");
 const {
@@ -46,5 +47,6 @@ router.patch(
 	changeSettings
 );
 router.post("/avatars", auth, uploadCloud.single("avatar"), updateAvatar);
+router.patch("/change-password", jsonParser, changePassword);
 
 module.exports = router;
