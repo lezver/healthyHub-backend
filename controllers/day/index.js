@@ -5,6 +5,7 @@ const updateBreakfast = require("./updateBreakfest");
 const updateLunch = require("./updateLunch");
 const updateDiner = require("./updateDiner");
 const updateSnack = require("./updateSnack");
+const updateWater = require("./updateWater");
 
 module.exports = {
     createDay,
@@ -14,4 +15,5 @@ module.exports = {
     updateLunch,
     updateDiner,
     updateSnack,
+    updateWater,
 }

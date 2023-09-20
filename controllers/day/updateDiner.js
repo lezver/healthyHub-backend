@@ -14,7 +14,7 @@ const updateDiner = async (req, res, next) => {
         if (newMeals === null) {
             return res.status(400).json({ message: "Invalid request data", details: error.details });
         }
-        return res.status(200).json({ message: "Diner is done!" });
+        return res.status(200).json(newMeals);
     } catch (error) {
         next(error);
     }

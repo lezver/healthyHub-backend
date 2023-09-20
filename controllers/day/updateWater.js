@@ -1,23 +1,23 @@
 const daySchema = require("../../schemas/day");
 
-const { updateSnacks } = require("../../models/day/day");
+const { updateWaters } = require("../../models/day/day");
 
-const updateSnack = async (req, res, next) => {
+const updateWater = async (req, res, next) => {
     try {
         const { error } = daySchema.validate(req.body);
 
         if (error) {
             return res.status(400).json({ message: "Invalid request data", details: error.details });
-        };
-        const newMeals = await updateSnacks(req, req.body);
+        }
+        const newWater = await updateWaters(req, req.body);
 
-        if (newMeals === null) {
+        if (newWater === null) {
             return res.status(400).json({ message: "Invalid request data", details: error.details });
         }
-        return res.status(200).json(newMeals);
+        return res.status(200).json(newWater);
     } catch (error) {
         next(error);
     }
 };
 
-module.exports = updateSnack;
+module.exports = updateWater;

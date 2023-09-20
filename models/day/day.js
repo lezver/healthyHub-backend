@@ -1,11 +1,8 @@
 const { json } = require('express');
-const current = require('../../controllers/user/current');
+// const current = require('../../controllers/user/current');
 const Day = require('../../schemas/day');
-const { updateDay } = require('../../controllers/day');
-// const formatDate = require('../../utils/dateutils');
 
 const currentDate = new Date();
-// console.log(formatDate(currentDate));
 const startOfDay = new Date(currentDate.toISOString().split('T')[0]);
 const endOfDay = new Date(startOfDay);
 endOfDay.setHours(23, 59, 59, 999);
@@ -44,7 +41,6 @@ const updateBreakfasts = async(req, body) => {
     const day = await Day.findOne({ date: { $gte: startOfDay, $lte: endOfDay } });
 
     const existingBreakfast = [...day.breakfast];
-    console.log(existingBreakfast);
     existingBreakfast.push(body);
     day.breakfast = existingBreakfast;
     const updatedDay = await day.save();
@@ -85,6 +81,21 @@ const updateSnacks = async(req, body) => {
     return updatedDay;
 };
 
+const updateWaters = async (req, body) => {
+    const day = await Day.findOne({ date: { $gte: startOfDay, $lte: endOfDay } });
+    if (day.length === 0) {
+        return null;
+    }
+    const currentWater = day.water || 0;
+    const amountToAdd = parseFloat(body.water);
+    const updateWater = currentWater + amountToAdd;
+
+    day.water = updateWater;
+    const updateDay = await day.save();
+
+    return updateDay;
+};
+
 module.exports = {
     daysInfo,
     createDays,
@@ -93,4 +104,5 @@ module.exports = {
     updateLunchs,
     updateDiners,
     updateSnacks,
+    updateWaters,
 };
