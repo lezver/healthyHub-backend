@@ -7,6 +7,10 @@ const daySchema = new mongoose.Schema({
     calories: Number,    
     water: Number,
     weight: Number,
+    carbonohidrates: Number,
+    protein: Number,
+    fat: Number,
+    calories: Number,
     isChanged: {
         type: Boolean,
         default: false,
@@ -100,7 +104,8 @@ const daySchema = new mongoose.Schema({
                 required: true,
             },
         },],
-    // ownerId: {
+    ownerId: mongoose.Schema.ObjectId,
+    // {
     //     type: mongoose.Schema.ObjectId,
     //     required: true,
     // },
