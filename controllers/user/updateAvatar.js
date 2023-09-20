@@ -13,7 +13,7 @@ const updateAvatar = async (req, res) => {
 	);
 	if (!updateAvatarUser) throw httpError(404, "Not found");
 
-	return res.status(200).send(updateAvatarUser.avatarURL);
+	return res.status(200).send({ avatarURL });
 };
 
 module.exports = { updateAvatar: wrapperError(updateAvatar) };
