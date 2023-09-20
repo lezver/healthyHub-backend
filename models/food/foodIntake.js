@@ -35,6 +35,10 @@ const foodIntakeSchema = new Schema(
       type: Number,
       required: true,
     },
+    foodId: {
+      type: String,
+      required: true,
+    },
   },
   {
     versionKey: false,
