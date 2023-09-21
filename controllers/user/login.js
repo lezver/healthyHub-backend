@@ -30,7 +30,6 @@ const login = async (req, res) => {
 	);
 
 	return res.status(200).send({
-		id: addTokenToUser._id,
 		name: addTokenToUser.name,
 		email: addTokenToUser.email,
 		avatarURL: addTokenToUser.avatarURL,

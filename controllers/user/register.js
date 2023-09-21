@@ -41,7 +41,6 @@ const register = async (req, res) => {
 	).exec();
 
 	return res.status(201).send({
-		id: addTokenToNewUser._id,
 		name: addTokenToNewUser.name,
 		email: addTokenToNewUser.email,
 		avatarURL: addTokenToNewUser.avatarURL,
