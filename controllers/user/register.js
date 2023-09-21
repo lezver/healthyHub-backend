@@ -15,7 +15,7 @@ const register = async (req, res) => {
 	if (checkEmailUser) throw httpError(409, "Email in use!");
 
 	const hashPassword = await bcrypt.hash(password, 10);
-	const avatarURL = gravatar.url(email);
+	const avatarURL = gravatar.url(email, { s: "250", r: "g", d: "wavatar" });
 
 	const newUser = await User.create({
 		name,
@@ -40,7 +40,18 @@ const register = async (req, res) => {
 		{ new: true }
 	).exec();
 
-	return res.status(201).send(addTokenToNewUser);
+	return res.status(201).send({
+		name: addTokenToNewUser.name,
+		email: addTokenToNewUser.email,
+		avatarURL: addTokenToNewUser.avatarURL,
+		goal: addTokenToNewUser.goal,
+		gender: addTokenToNewUser.gender,
+		age: addTokenToNewUser.age,
+		height: addTokenToNewUser.height,
+		weight: addTokenToNewUser.weight,
+		activity: addTokenToNewUser.activity,
+		token: addTokenToNewUser.token,
+	});
 };
 
 module.exports = { register: wrapperError(register) };
