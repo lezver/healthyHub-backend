@@ -8,6 +8,7 @@ const updateWater = require("./updateWater");
 const monthStatistic = require("./monthStatistic");
 const yearStatistic = require("./yearStatistic");
 const createYear = require("./createYear");
+const editBreakfest = require("./editBreakfest");
 
 module.exports = {
     createDay,
@@ -20,4 +21,5 @@ module.exports = {
     monthStatistic,
     yearStatistic,
     createYear,
+    editBreakfest,
 }

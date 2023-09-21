@@ -102,7 +102,7 @@ const monthStatistics = async (req) => {
     return day;
 }
 
-const yearStatistics = async () => {
+const yearStatistics = async (req) => {
     const userId = req.user.id;
     const startOfMonth = new Date(currentDate.getFullYear(), 0, 1);
     const endOfMonth = new Date(currentDate.getFullYear(), 11, 31, 23, 59, 59, 999);
@@ -110,6 +110,24 @@ const yearStatistics = async () => {
     const day = await Day.find({ ownerId: userId, date: { $gte: startOfMonth, $lte: endOfMonth } });
 
     return day;
+}
+
+const editBreakfests = async (req, mealsId, body) => {
+    const userId = req.user.id;
+    const day = await Day.findOne({ ownerId: userId, date: { $gte: startOfDay, $lte: endOfDay } });
+
+    const indexOfObjectToUpdate = day.breakfast.findIndex(item => item._id === mealsId);
+    console.log(indexOfObjectToUpdate);
+    console.log(userId);
+    console.log(item._id);
+    console.log(item);
+
+    // const existingBreakfast = [...day.breakfast];
+    // existingBreakfast.push(body);
+    // day.breakfast = existingBreakfast;
+    // const updatedDay = await day.save();
+
+    return indexOfObjectToUpdate;
 }
 
 module.exports = {
@@ -122,4 +140,5 @@ module.exports = {
     updateWaters,
     monthStatistics,
     yearStatistics,
+    editBreakfests,
 };
