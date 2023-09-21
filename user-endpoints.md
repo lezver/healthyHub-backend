@@ -68,3 +68,21 @@ example
 "weight": "100",
 "activity": "1.2"
 }
+
+//
+
+https://healthy-hub.onrender.com/api/user/avatars
+POST
+example
+
+Bearer Token :
+
+//
+
+https://healthy-hub.onrender.com/api/user/change-password
+PATCH
+example
+
+{
+"email": "user@email.com"
+}

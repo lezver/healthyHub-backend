@@ -11,9 +11,8 @@ const updateAvatar = async (req, res) => {
 		{ avatarURL },
 		{ new: true }
 	);
-	if (!updateAvatarUser) throw httpError(404, "Not found");
 
-	return res.status(200).send({ avatarURL });
+	return res.status(200).send({ avatarURL: updateAvatarUser.avatarURL });
 };
 
 module.exports = { updateAvatar: wrapperError(updateAvatar) };

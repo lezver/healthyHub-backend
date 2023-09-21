@@ -5,9 +5,13 @@ const changeOfGoal = async (req, res) => {
 	const { _id } = req.user;
 	const { goal } = req.body;
 
-	await User.findByIdAndUpdate(_id, { goal }, { new: true }).exec();
+	const changeUserGoal = await User.findByIdAndUpdate(
+		_id,
+		{ goal },
+		{ new: true }
+	).exec();
 
-	return res.status(200).send({ message: goal });
+	return res.status(200).send({ goal: changeUserGoal.goal });
 };
 
 module.exports = { changeOfGoal: wrapperError(changeOfGoal) };
