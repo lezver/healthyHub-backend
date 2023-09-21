@@ -6,25 +6,25 @@ const { SECRET_KEY } = process.env;
 const noProvide = "No authorized";
 
 const auth = async (req, res, next) => {
-	const { authorization = "" } = req.headers;
+  const { authorization = "" } = req.headers;
 
-	const [bearer, token] = authorization.split(" ");
+  const [bearer, token] = authorization.split(" ");
 
-	if (!bearer) return next(httpError(401, noProvide));
+  if (!bearer) return next(httpError(401, noProvide));
 
-	try {
-		const { id } = jwt.verify(token, SECRET_KEY);
+  try {
+    const { id } = jwt.verify(token, SECRET_KEY);
 
-		const user = await User.findById(id).exec();
-		if (!user || !user.token || user.token !== token)
-			return next(httpError(401, noProvide));
+    const user = await User.findById(id).exec();
+    if (!user || !user.token || user.token !== token)
+      return next(httpError(401, noProvide));
 
-		req.user = user;
+    req.user = user;
 
-		return next();
-	} catch {
-		return next(httpError(401, noProvide));
-	}
+    return next();
+  } catch {
+    return next(httpError(401, noProvide));
+  }
 };
 
 module.exports = auth;
