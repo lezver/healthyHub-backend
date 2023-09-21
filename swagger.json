@@ -1,0 +1,220 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "version": "0.0.1",
+    "title": "Health Hub",
+    "description": "Showing off swagger-ui-express",
+    "license": {
+      "name": "MIT",
+      "url": "https://opensource.org/licenses/MIT"
+    }
+  },
+  "consumes": ["application/json"],
+  "produces": ["application/json"],
+  "servers": [{ "url": "https://healthy-hub.onrender.com/" }],
+  "tags": [
+    {
+      "name": "Auth",
+      "description": "Authorization endpoints"
+    }
+  ],
+  "paths": {
+    "/api/user/register": {
+      "post": {
+        "tags": [],
+        "summary": "User registration",
+        "parameters": [],
+        "security": [],
+        "requestBody": {
+          "description": "Registration's object",
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/RegistrationRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "Successful operation",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/RegistrationResponse"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad request (invalid request body)",
+            "content": {}
+          },
+          "409": {
+            "description": "Email in use!",
+            "content": {}
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "RegistrationRequest": {
+        "type": "object",
+        "required": [
+          "goal",
+          "gender",
+          "age",
+          "height",
+          "weight",
+          "activity",
+          "name",
+          "email",
+          "password"
+        ],
+        "properties": {
+          "email": {
+            "type": "string",
+            "description": "User's email",
+            "format": "email"
+          },
+          "password": {
+            "type": "string",
+            "description": "User's password",
+            "example": "qwerty123"
+          },
+          "avatarURL": {
+            "type": "string",
+            "description": "URL for image"
+          },
+          "goal": {
+            "type": "string",
+            "description": "User's goal",
+            "enum": ["Lose Fat", "Maintain", "Gain Muscle"]
+          },
+          "gender": {
+            "type": "string",
+            "description": "User's goal",
+            "enum": ["Male", "Female"]
+          },
+          "age": {
+            "type": "string",
+            "description": "User's age"
+          },
+          "height": {
+            "type": "string",
+            "description": "User's height"
+          },
+          "weight": {
+            "type": "string",
+            "description": "User's weight"
+          },
+          "activity": {
+            "type": "string",
+            "description": "User's activity",
+            "enum": ["1.2", "1.375", "1.55", "1.725", "1.9"]
+          }
+        }
+      },
+      "RegistrationResponse": {
+        "type": "object",
+        "properties": {
+          "email": {
+            "type": "string",
+            "description": "User's email",
+            "format": "email"
+          },
+          "userId": {
+            "type": "string",
+            "description": "User's id",
+            "example": "650b17c591f026bd77525b6d"
+          },
+          "name": {
+            "type": "string",
+            "description": "User's name",
+            "example": "650b17c591f026bd77525b6d"
+          },
+          "password": {
+            "type": "string",
+            "description": "User's password"
+          },
+          "avatarURL": {
+            "type": "string",
+            "description": "URL to image",
+            "example": "//www.gravatar.com/avatar/96d9ef5a5579c59ba2ebf8ce6e6ba617"
+          },
+          "goal": {
+            "type": "string",
+            "description": "User's goal",
+            "example": "Lose Fat"
+          },
+          "gender": {
+            "type": "string",
+            "description": "User's gender",
+            "example": "Female"
+          },
+          "age": {
+            "type": "string",
+            "description": "User's age",
+            "example": "58"
+          },
+          "height": {
+            "type": "string",
+            "description": "User's height",
+            "example": "178"
+          },
+          "weight": {
+            "type": "string",
+            "description": "User's weight",
+            "example": "132"
+          },
+          "activity": {
+            "type": "string",
+            "description": "User's activity",
+            "example": "1.2"
+          },
+          "createdAt": {
+            "type": "date",
+            "description": "User's create date",
+            "example": "2020-07-20T18:03:17.199Z"
+          },
+          "updatedAt": {
+            "type": "date",
+            "description": "User's update date",
+            "example": "2020-07-20T18:03:17.199Z"
+          },
+          "token": {
+            "type": "string",
+            "description": "JWT token",
+            "example": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1MGIxN2M1OTFmMDI2YmQ3NzUyNWI4ZCIsImlhdCI6MTY5NTIyNTc5NywiZXhwIjoxNjk1MzA4NTk3fQ.0uWHpbQZXcOaDqTo-zTbaY1Rh2A14IXpsD6fpACYwS0"
+          }
+        },
+        "example": {
+          "_id": "650b17c591f026bd77525b6d",
+          "name": "John",
+          "email": "test@email.com",
+          "password": "$3b$10$mNuY9CugvJvyNgQaNI9VguEO7B5qtd8roNJa6xVsQzg3bkxGGMBY",
+          "avatarURL": "//www.gravatar.com/avatar/96d9ef5a5579c59ba2ebf8ce6e6ba615",
+          "goal": "Lose Fat",
+          "gender": "Male",
+          "age": "158",
+          "height": "205",
+          "weight": "55",
+          "activity": "1.2",
+          "createdAt": "2023-09-20T16:03:17.199Z",
+          "updatedAt": "2023-09-20T16:03:17.406Z",
+          "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1MGIxN2M1OTFmMDI2Ym3NzUyNWI3ZCIsImlhdCI6MTY5NTIyNTc5NywiZXhwIjoxNjk1MzA4NTkfQ.0uWHpbQZXcOaDqTo-zTbaY1Rh2A14IXpsD6fpACYwS0"
+        }
+      }
+    },
+    "securitySchemes": {
+      "Bearer": {
+        "type": "http",
+        "scheme": "bearer",
+        "bearerFormat": "JWT"
+      }
+    }
+  }
+}
