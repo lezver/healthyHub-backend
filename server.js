@@ -7,8 +7,8 @@ mongoose.set("strictQuery", true);
 mongoose
   .connect(DB_HOST)
   .then(() => {
-    app.listen(80);
-    console.log("Server  running. Use our API on port: 80");
+    app.listen(6666);
+    console.log("Server  running. Use our API on port: 6666");
   })
   .catch((err) => {
     console.error(err.message);
