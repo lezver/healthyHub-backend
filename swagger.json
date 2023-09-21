@@ -2,6 +2,7 @@
   "openapi": "3.0.1",
   "info": {
     "version": "0.0.1",
+    "basePath": "https://healthy-hub.onrender.com/",
     "title": "Health Hub",
     "description": "Showing off swagger-ui-express",
     "license": {
@@ -66,7 +67,7 @@
     },
     "/api/user/check-email": {
       "post": {
-        "tags": [],
+        "tags": ["Auth"],
         "summary": "check if email is used",
         "parameters": [],
         "security": [],
@@ -94,13 +95,12 @@
             "description": "Email in use!",
             "content": {}
           }
-        },
-        "tags": ["Auth"]
+        }
       }
     },
     "/api/user/login": {
       "post": {
-        "tags": [],
+        "tags": ["Auth"],
         "summary": "User login",
         "parameters": [],
         "security": [],
@@ -134,13 +134,12 @@
             "description": "Email or password is wrong",
             "content": {}
           }
-        },
-        "tags": ["Auth"]
+        }
       }
     },
     "/api/user/logout": {
       "post": {
-        "tags": [],
+        "tags": ["Auth"],
         "summary": "Logout user",
         "parameters": [],
         "security": [{ "Bearer": [] }],
@@ -164,13 +163,12 @@
             "description": "Bad request (invalid request body)",
             "content": {}
           }
-        },
-        "tags": ["Auth"]
+        }
       }
     },
     "/api/user/current": {
       "get": {
-        "tags": [],
+        "tags": ["Auth"],
         "summary": "User information",
         "parameters": [],
         "security": [{ "Bearer": [] }],
@@ -200,8 +198,7 @@
             "description": "Bad request (invalid request body)",
             "content": {}
           }
-        },
-        "tags": ["Auth"]
+        }
       }
     },
     "/api/user/change-goal": {
