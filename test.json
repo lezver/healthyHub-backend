@@ -1,0 +1,1810 @@
+{{
+  "_id": {
+    "$oid": "650748a45435649a05575ea2"
+  },
+  "date": {
+    "$date": "2022-09-17T18:40:25.068Z"
+  },
+  "water": ["116"],
+  "weight": 123,
+  "isChanged": false,
+  "breakfast": [
+    {
+      "name": "Avоcado",
+      "carbonohidrates": "46",
+      "protein": "65",
+      "fat": "10",
+      "calories": "200",
+      "foodId": "784tgfy45gf"
+    },
+    {
+      "name": "fish",
+      "carbonohidrates": "46",
+      "protein": "65",
+      "fat": "10",
+      "calories": "200",
+      "foodId": "34t5ge4fwef"
+    }
+  ],
+  "lunch": [
+    {
+      "name": "Avоcado",
+      "carbonohidrates": "46",
+      "protein": "65",
+      "fat": "10",
+      "calories": "200",
+      "foodId": "784tgfy45gf"
+    }
+  ],
+  "diner": [
+    {
+      "name": "Avоcado",
+      "carbonohidrates": "46",
+      "protein": "65",
+      "fat": "10",
+      "calories": "200",
+      "foodId": "784tgfy45gf"
+    },
+    {
+      "name": "fish",
+      "carbonohidrates": "46",
+      "protein": "65",
+      "fat": "10",
+      "calories": "200",
+      "foodId": "34t5ge4fwef"
+    }
+  ],
+  "snack": [
+    {
+      "name": "fish",
+      "carbonohidrates": "46",
+      "protein": "65",
+      "fat": "10",
+      "calories": "200",
+      "foodId": "34t5ge4fwef"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "650748a45435649a05575ea"
+  },
+  "date": {
+    "$date": "2022-09-16T18:40:25.068Z"
+  },
+  "water": ["116"],
+  "weight": 123,
+  "isChanged": false,
+  "breakfast": [
+    {
+      "name": "Avоcado",
+      "carbonohidrates": "46",
+      "protein": "65",
+      "fat": "10",
+      "calories": "200",
+      "foodId": "784tgfy45gf"
+    },
+    {
+      "name": "fish",
+      "carbonohidrates": "46",
+      "protein": "65",
+      "fat": "10",
+      "calories": "200",
+      "foodId": "34t5ge4fwef"
+    }
+  ],
+  "lunch": [
+    {
+      "name": "Avоcado",
+      "carbonohidrates": "46",
+      "protein": "65",
+      "fat": "10",
+      "calories": "200",
+      "foodId": "784tgfy45gf"
+    }
+  ],
+  "diner": [
+    {
+      "name": "Avоcado",
+      "carbonohidrates": "46",
+      "protein": "65",
+      "fat": "10",
+      "calories": "200",
+      "foodId": "784tgfy45gf"
+    },
+    {
+      "name": "fish",
+      "carbonohidrates": "46",
+      "protein": "65",
+      "fat": "10",
+      "calories": "200",
+      "foodId": "34t5ge4fwef"
+    }
+  ],
+  "snack": [
+    {
+      "name": "fish",
+      "carbonohidrates": "46",
+      "protein": "65",
+      "fat": "10",
+      "calories": "200",
+      "foodId": "34t5ge4fwef"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "650748a45435649a05575ea2"
+  },
+  "date": {
+    "$date": "2022-09-17T18:40:25.068Z"
+  },
+  "water": ["116"],
+  "weight": 123,
+  "isChanged": false,
+  "breakfast": [
+    {
+      "name": "Avоcado",
+      "carbonohidrates": "46",
+      "protein": "65",
+      "fat": "10",
+      "calories": "200",
+      "foodId": "784tgfy45gf"
+    },
+    {
+      "name": "fish",
+      "carbonohidrates": "46",
+      "protein": "65",
+      "fat": "10",
+      "calories": "200",
+      "foodId": "34t5ge4fwef"
+    }
+  ],
+  "lunch": [
+    {
+      "name": "Avоcado",
+      "carbonohidrates": "46",
+      "protein": "65",
+      "fat": "10",
+      "calories": "200",
+      "foodId": "784tgfy45gf"
+    }
+  ],
+  "diner": [
+    {
+      "name": "Avоcado",
+      "carbonohidrates": "46",
+      "protein": "65",
+      "fat": "10",
+      "calories": "200",
+      "foodId": "784tgfy45gf"
+    },
+    {
+      "name": "fish",
+      "carbonohidrates": "46",
+      "protein": "65",
+      "fat": "10",
+      "calories": "200",
+      "foodId": "34t5ge4fwef"
+    }
+  ],
+  "snack": [
+    {
+      "name": "fish",
+      "carbonohidrates": "46",
+      "protein": "65",
+      "fat": "10",
+      "calories": "200",
+      "foodId": "34t5ge4fwef"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "650748a45435649a05575ea2"
+  },
+  "date": {
+    "$date": "2022-09-17T18:40:25.068Z"
+  },
+  "water": ["116"],
+  "weight": 123,
+  "isChanged": false,
+  "breakfast": [
+    {
+      "name": "Avоcado",
+      "carbonohidrates": "46",
+      "protein": "65",
+      "fat": "10",
+      "calories": "200",
+      "foodId": "784tgfy45gf"
+    },
+    {
+      "name": "fish",
+      "carbonohidrates": "46",
+      "protein": "65",
+      "fat": "10",
+      "calories": "200",
+      "foodId": "34t5ge4fwef"
+    }
+  ],
+  "lunch": [
+    {
+      "name": "Avоcado",
+      "carbonohidrates": "46",
+      "protein": "65",
+      "fat": "10",
+      "calories": "200",
+      "foodId": "784tgfy45gf"
+    }
+  ],
+  "diner": [
+    {
+      "name": "Avоcado",
+      "carbonohidrates": "46",
+      "protein": "65",
+      "fat": "10",
+      "calories": "200",
+      "foodId": "784tgfy45gf"
+    },
+    {
+      "name": "fish",
+      "carbonohidrates": "46",
+      "protein": "65",
+      "fat": "10",
+      "calories": "200",
+      "foodId": "34t5ge4fwef"
+    }
+  ],
+  "snack": [
+    {
+      "name": "fish",
+      "carbonohidrates": "46",
+      "protein": "65",
+      "fat": "10",
+      "calories": "200",
+      "foodId": "34t5ge4fwef"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "650748a45435649a05575ea2"
+  },
+  "date": {
+    "$date": "2022-09-17T18:40:25.068Z"
+  },
+  "water": ["116"],
+  "weight": 123,
+  "isChanged": false,
+  "breakfast": [
+    {
+      "name": "Avоcado",
+      "carbonohidrates": "46",
+      "protein": "65",
+      "fat": "10",
+      "calories": "200",
+      "foodId": "784tgfy45gf"
+    },
+    {
+      "name": "fish",
+      "carbonohidrates": "46",
+      "protein": "65",
+      "fat": "10",
+      "calories": "200",
+      "foodId": "34t5ge4fwef"
+    }
+  ],
+  "lunch": [
+    {
+      "name": "Avоcado",
+      "carbonohidrates": "46",
+      "protein": "65",
+      "fat": "10",
+      "calories": "200",
+      "foodId": "784tgfy45gf"
+    }
+  ],
+  "diner": [
+    {
+      "name": "Avоcado",
+      "carbonohidrates": "46",
+      "protein": "65",
+      "fat": "10",
+      "calories": "200",
+      "foodId": "784tgfy45gf"
+    },
+    {
+      "name": "fish",
+      "carbonohidrates": "46",
+      "protein": "65",
+      "fat": "10",
+      "calories": "200",
+      "foodId": "34t5ge4fwef"
+    }
+  ],
+  "snack": [
+    {
+      "name": "fish",
+      "carbonohidrates": "46",
+      "protein": "65",
+      "fat": "10",
+      "calories": "200",
+      "foodId": "34t5ge4fwef"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "650748a45435649a05575ea2"
+  },
+  "date": {
+    "$date": "2022-09-17T18:40:25.068Z"
+  },
+  "water": ["116"],
+  "weight": 123,
+  "isChanged": false,
+  "breakfast": [
+    {
+      "name": "Avоcado",
+      "carbonohidrates": "46",
+      "protein": "65",
+      "fat": "10",
+      "calories": "200",
+      "foodId": "784tgfy45gf"
+    },
+    {
+      "name": "fish",
+      "carbonohidrates": "46",
+      "protein": "65",
+      "fat": "10",
+      "calories": "200",
+      "foodId": "34t5ge4fwef"
+    }
+  ],
+  "lunch": [
+    {
+      "name": "Avоcado",
+      "carbonohidrates": "46",
+      "protein": "65",
+      "fat": "10",
+      "calories": "200",
+      "foodId": "784tgfy45gf"
+    }
+  ],
+  "diner": [
+    {
+      "name": "Avоcado",
+      "carbonohidrates": "46",
+      "protein": "65",
+      "fat": "10",
+      "calories": "200",
+      "foodId": "784tgfy45gf"
+    },
+    {
+      "name": "fish",
+      "carbonohidrates": "46",
+      "protein": "65",
+      "fat": "10",
+      "calories": "200",
+      "foodId": "34t5ge4fwef"
+    }
+  ],
+  "snack": [
+    {
+      "name": "fish",
+      "carbonohidrates": "46",
+      "protein": "65",
+      "fat": "10",
+      "calories": "200",
+      "foodId": "34t5ge4fwef"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "650748a45435649a05575ea2"
+  },
+  "date": {
+    "$date": "2022-09-17T18:40:25.068Z"
+  },
+  "water": ["116"],
+  "weight": 123,
+  "isChanged": false,
+  "breakfast": [
+    {
+      "name": "Avоcado",
+      "carbonohidrates": "46",
+      "protein": "65",
+      "fat": "10",
+      "calories": "200",
+      "foodId": "784tgfy45gf"
+    },
+    {
+      "name": "fish",
+      "carbonohidrates": "46",
+      "protein": "65",
+      "fat": "10",
+      "calories": "200",
+      "foodId": "34t5ge4fwef"
+    }
+  ],
+  "lunch": [
+    {
+      "name": "Avоcado",
+      "carbonohidrates": "46",
+      "protein": "65",
+      "fat": "10",
+      "calories": "200",
+      "foodId": "784tgfy45gf"
+    }
+  ],
+  "diner": [
+    {
+      "name": "Avоcado",
+      "carbonohidrates": "46",
+      "protein": "65",
+      "fat": "10",
+      "calories": "200",
+      "foodId": "784tgfy45gf"
+    },
+    {
+      "name": "fish",
+      "carbonohidrates": "46",
+      "protein": "65",
+      "fat": "10",
+      "calories": "200",
+      "foodId": "34t5ge4fwef"
+    }
+  ],
+  "snack": [
+    {
+      "name": "fish",
+      "carbonohidrates": "46",
+      "protein": "65",
+      "fat": "10",
+      "calories": "200",
+      "foodId": "34t5ge4fwef"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "650748a45435649a05575ea2"
+  },
+  "date": {
+    "$date": "2022-09-17T18:40:25.068Z"
+  },
+  "water": ["116"],
+  "weight": 123,
+  "isChanged": false,
+  "breakfast": [
+    {
+      "name": "Avоcado",
+      "carbonohidrates": "46",
+      "protein": "65",
+      "fat": "10",
+      "calories": "200",
+      "foodId": "784tgfy45gf"
+    },
+    {
+      "name": "fish",
+      "carbonohidrates": "46",
+      "protein": "65",
+      "fat": "10",
+      "calories": "200",
+      "foodId": "34t5ge4fwef"
+    }
+  ],
+  "lunch": [
+    {
+      "name": "Avоcado",
+      "carbonohidrates": "46",
+      "protein": "65",
+      "fat": "10",
+      "calories": "200",
+      "foodId": "784tgfy45gf"
+    }
+  ],
+  "diner": [
+    {
+      "name": "Avоcado",
+      "carbonohidrates": "46",
+      "protein": "65",
+      "fat": "10",
+      "calories": "200",
+      "foodId": "784tgfy45gf"
+    },
+    {
+      "name": "fish",
+      "carbonohidrates": "46",
+      "protein": "65",
+      "fat": "10",
+      "calories": "200",
+      "foodId": "34t5ge4fwef"
+    }
+  ],
+  "snack": [
+    {
+      "name": "fish",
+      "carbonohidrates": "46",
+      "protein": "65",
+      "fat": "10",
+      "calories": "200",
+      "foodId": "34t5ge4fwef"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "650748a45435649a05575ea2"
+  },
+  "date": {
+    "$date": "2022-09-17T18:40:25.068Z"
+  },
+  "water": ["116"],
+  "weight": 123,
+  "isChanged": false,
+  "breakfast": [
+    {
+      "name": "Avоcado",
+      "carbonohidrates": "46",
+      "protein": "65",
+      "fat": "10",
+      "calories": "200",
+      "foodId": "784tgfy45gf"
+    },
+    {
+      "name": "fish",
+      "carbonohidrates": "46",
+      "protein": "65",
+      "fat": "10",
+      "calories": "200",
+      "foodId": "34t5ge4fwef"
+    }
+  ],
+  "lunch": [
+    {
+      "name": "Avоcado",
+      "carbonohidrates": "46",
+      "protein": "65",
+      "fat": "10",
+      "calories": "200",
+      "foodId": "784tgfy45gf"
+    }
+  ],
+  "diner": [
+    {
+      "name": "Avоcado",
+      "carbonohidrates": "46",
+      "protein": "65",
+      "fat": "10",
+      "calories": "200",
+      "foodId": "784tgfy45gf"
+    },
+    {
+      "name": "fish",
+      "carbonohidrates": "46",
+      "protein": "65",
+      "fat": "10",
+      "calories": "200",
+      "foodId": "34t5ge4fwef"
+    }
+  ],
+  "snack": [
+    {
+      "name": "fish",
+      "carbonohidrates": "46",
+      "protein": "65",
+      "fat": "10",
+      "calories": "200",
+      "foodId": "34t5ge4fwef"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "650748a45435649a05575ea2"
+  },
+  "date": {
+    "$date": "2022-09-17T18:40:25.068Z"
+  },
+  "water": ["116"],
+  "weight": 123,
+  "isChanged": false,
+  "breakfast": [
+    {
+      "name": "Avоcado",
+      "carbonohidrates": "46",
+      "protein": "65",
+      "fat": "10",
+      "calories": "200",
+      "foodId": "784tgfy45gf"
+    },
+    {
+      "name": "fish",
+      "carbonohidrates": "46",
+      "protein": "65",
+      "fat": "10",
+      "calories": "200",
+      "foodId": "34t5ge4fwef"
+    }
+  ],
+  "lunch": [
+    {
+      "name": "Avоcado",
+      "carbonohidrates": "46",
+      "protein": "65",
+      "fat": "10",
+      "calories": "200",
+      "foodId": "784tgfy45gf"
+    }
+  ],
+  "diner": [
+    {
+      "name": "Avоcado",
+      "carbonohidrates": "46",
+      "protein": "65",
+      "fat": "10",
+      "calories": "200",
+      "foodId": "784tgfy45gf"
+    },
+    {
+      "name": "fish",
+      "carbonohidrates": "46",
+      "protein": "65",
+      "fat": "10",
+      "calories": "200",
+      "foodId": "34t5ge4fwef"
+    }
+  ],
+  "snack": [
+    {
+      "name": "fish",
+      "carbonohidrates": "46",
+      "protein": "65",
+      "fat": "10",
+      "calories": "200",
+      "foodId": "34t5ge4fwef"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "650748a45435649a05575ea2"
+  },
+  "date": {
+    "$date": "2022-09-17T18:40:25.068Z"
+  },
+  "water": ["116"],
+  "weight": 123,
+  "isChanged": false,
+  "breakfast": [
+    {
+      "name": "Avоcado",
+      "carbonohidrates": "46",
+      "protein": "65",
+      "fat": "10",
+      "calories": "200",
+      "foodId": "784tgfy45gf"
+    },
+    {
+      "name": "fish",
+      "carbonohidrates": "46",
+      "protein": "65",
+      "fat": "10",
+      "calories": "200",
+      "foodId": "34t5ge4fwef"
+    }
+  ],
+  "lunch": [
+    {
+      "name": "Avоcado",
+      "carbonohidrates": "46",
+      "protein": "65",
+      "fat": "10",
+      "calories": "200",
+      "foodId": "784tgfy45gf"
+    }
+  ],
+  "diner": [
+    {
+      "name": "Avоcado",
+      "carbonohidrates": "46",
+      "protein": "65",
+      "fat": "10",
+      "calories": "200",
+      "foodId": "784tgfy45gf"
+    },
+    {
+      "name": "fish",
+      "carbonohidrates": "46",
+      "protein": "65",
+      "fat": "10",
+      "calories": "200",
+      "foodId": "34t5ge4fwef"
+    }
+  ],
+  "snack": [
+    {
+      "name": "fish",
+      "carbonohidrates": "46",
+      "protein": "65",
+      "fat": "10",
+      "calories": "200",
+      "foodId": "34t5ge4fwef"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "650748a45435649a05575ea2"
+  },
+  "date": {
+    "$date": "2022-09-17T18:40:25.068Z"
+  },
+  "water": ["116"],
+  "weight": 123,
+  "isChanged": false,
+  "breakfast": [
+    {
+      "name": "Avоcado",
+      "carbonohidrates": "46",
+      "protein": "65",
+      "fat": "10",
+      "calories": "200",
+      "foodId": "784tgfy45gf"
+    },
+    {
+      "name": "fish",
+      "carbonohidrates": "46",
+      "protein": "65",
+      "fat": "10",
+      "calories": "200",
+      "foodId": "34t5ge4fwef"
+    }
+  ],
+  "lunch": [
+    {
+      "name": "Avоcado",
+      "carbonohidrates": "46",
+      "protein": "65",
+      "fat": "10",
+      "calories": "200",
+      "foodId": "784tgfy45gf"
+    }
+  ],
+  "diner": [
+    {
+      "name": "Avоcado",
+      "carbonohidrates": "46",
+      "protein": "65",
+      "fat": "10",
+      "calories": "200",
+      "foodId": "784tgfy45gf"
+    },
+    {
+      "name": "fish",
+      "carbonohidrates": "46",
+      "protein": "65",
+      "fat": "10",
+      "calories": "200",
+      "foodId": "34t5ge4fwef"
+    }
+  ],
+  "snack": [
+    {
+      "name": "fish",
+      "carbonohidrates": "46",
+      "protein": "65",
+      "fat": "10",
+      "calories": "200",
+      "foodId": "34t5ge4fwef"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "650748a45435649a05575ea2"
+  },
+  "date": {
+    "$date": "2022-09-17T18:40:25.068Z"
+  },
+  "water": ["116"],
+  "weight": 123,
+  "isChanged": false,
+  "breakfast": [
+    {
+      "name": "Avоcado",
+      "carbonohidrates": "46",
+      "protein": "65",
+      "fat": "10",
+      "calories": "200",
+      "foodId": "784tgfy45gf"
+    },
+    {
+      "name": "fish",
+      "carbonohidrates": "46",
+      "protein": "65",
+      "fat": "10",
+      "calories": "200",
+      "foodId": "34t5ge4fwef"
+    }
+  ],
+  "lunch": [
+    {
+      "name": "Avоcado",
+      "carbonohidrates": "46",
+      "protein": "65",
+      "fat": "10",
+      "calories": "200",
+      "foodId": "784tgfy45gf"
+    }
+  ],
+  "diner": [
+    {
+      "name": "Avоcado",
+      "carbonohidrates": "46",
+      "protein": "65",
+      "fat": "10",
+      "calories": "200",
+      "foodId": "784tgfy45gf"
+    },
+    {
+      "name": "fish",
+      "carbonohidrates": "46",
+      "protein": "65",
+      "fat": "10",
+      "calories": "200",
+      "foodId": "34t5ge4fwef"
+    }
+  ],
+  "snack": [
+    {
+      "name": "fish",
+      "carbonohidrates": "46",
+      "protein": "65",
+      "fat": "10",
+      "calories": "200",
+      "foodId": "34t5ge4fwef"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "650748a45435649a05575ea2"
+  },
+  "date": {
+    "$date": "2022-09-17T18:40:25.068Z"
+  },
+  "water": ["116"],
+  "weight": 123,
+  "isChanged": false,
+  "breakfast": [
+    {
+      "name": "Avоcado",
+      "carbonohidrates": "46",
+      "protein": "65",
+      "fat": "10",
+      "calories": "200",
+      "foodId": "784tgfy45gf"
+    },
+    {
+      "name": "fish",
+      "carbonohidrates": "46",
+      "protein": "65",
+      "fat": "10",
+      "calories": "200",
+      "foodId": "34t5ge4fwef"
+    }
+  ],
+  "lunch": [
+    {
+      "name": "Avоcado",
+      "carbonohidrates": "46",
+      "protein": "65",
+      "fat": "10",
+      "calories": "200",
+      "foodId": "784tgfy45gf"
+    }
+  ],
+  "diner": [
+    {
+      "name": "Avоcado",
+      "carbonohidrates": "46",
+      "protein": "65",
+      "fat": "10",
+      "calories": "200",
+      "foodId": "784tgfy45gf"
+    },
+    {
+      "name": "fish",
+      "carbonohidrates": "46",
+      "protein": "65",
+      "fat": "10",
+      "calories": "200",
+      "foodId": "34t5ge4fwef"
+    }
+  ],
+  "snack": [
+    {
+      "name": "fish",
+      "carbonohidrates": "46",
+      "protein": "65",
+      "fat": "10",
+      "calories": "200",
+      "foodId": "34t5ge4fwef"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "650748a45435649a05575ea2"
+  },
+  "date": {
+    "$date": "2022-09-17T18:40:25.068Z"
+  },
+  "water": ["116"],
+  "weight": 123,
+  "isChanged": false,
+  "breakfast": [
+    {
+      "name": "Avоcado",
+      "carbonohidrates": "46",
+      "protein": "65",
+      "fat": "10",
+      "calories": "200",
+      "foodId": "784tgfy45gf"
+    },
+    {
+      "name": "fish",
+      "carbonohidrates": "46",
+      "protein": "65",
+      "fat": "10",
+      "calories": "200",
+      "foodId": "34t5ge4fwef"
+    }
+  ],
+  "lunch": [
+    {
+      "name": "Avоcado",
+      "carbonohidrates": "46",
+      "protein": "65",
+      "fat": "10",
+      "calories": "200",
+      "foodId": "784tgfy45gf"
+    }
+  ],
+  "diner": [
+    {
+      "name": "Avоcado",
+      "carbonohidrates": "46",
+      "protein": "65",
+      "fat": "10",
+      "calories": "200",
+      "foodId": "784tgfy45gf"
+    },
+    {
+      "name": "fish",
+      "carbonohidrates": "46",
+      "protein": "65",
+      "fat": "10",
+      "calories": "200",
+      "foodId": "34t5ge4fwef"
+    }
+  ],
+  "snack": [
+    {
+      "name": "fish",
+      "carbonohidrates": "46",
+      "protein": "65",
+      "fat": "10",
+      "calories": "200",
+      "foodId": "34t5ge4fwef"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "650748a45435649a05575ea2"
+  },
+  "date": {
+    "$date": "2022-09-17T18:40:25.068Z"
+  },
+  "water": ["116"],
+  "weight": 123,
+  "isChanged": false,
+  "breakfast": [
+    {
+      "name": "Avоcado",
+      "carbonohidrates": "46",
+      "protein": "65",
+      "fat": "10",
+      "calories": "200",
+      "foodId": "784tgfy45gf"
+    },
+    {
+      "name": "fish",
+      "carbonohidrates": "46",
+      "protein": "65",
+      "fat": "10",
+      "calories": "200",
+      "foodId": "34t5ge4fwef"
+    }
+  ],
+  "lunch": [
+    {
+      "name": "Avоcado",
+      "carbonohidrates": "46",
+      "protein": "65",
+      "fat": "10",
+      "calories": "200",
+      "foodId": "784tgfy45gf"
+    }
+  ],
+  "diner": [
+    {
+      "name": "Avоcado",
+      "carbonohidrates": "46",
+      "protein": "65",
+      "fat": "10",
+      "calories": "200",
+      "foodId": "784tgfy45gf"
+    },
+    {
+      "name": "fish",
+      "carbonohidrates": "46",
+      "protein": "65",
+      "fat": "10",
+      "calories": "200",
+      "foodId": "34t5ge4fwef"
+    }
+  ],
+  "snack": [
+    {
+      "name": "fish",
+      "carbonohidrates": "46",
+      "protein": "65",
+      "fat": "10",
+      "calories": "200",
+      "foodId": "34t5ge4fwef"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "650748a45435649a05575ea2"
+  },
+  "date": {
+    "$date": "2022-09-17T18:40:25.068Z"
+  },
+  "water": ["116"],
+  "weight": 123,
+  "isChanged": false,
+  "breakfast": [
+    {
+      "name": "Avоcado",
+      "carbonohidrates": "46",
+      "protein": "65",
+      "fat": "10",
+      "calories": "200",
+      "foodId": "784tgfy45gf"
+    },
+    {
+      "name": "fish",
+      "carbonohidrates": "46",
+      "protein": "65",
+      "fat": "10",
+      "calories": "200",
+      "foodId": "34t5ge4fwef"
+    }
+  ],
+  "lunch": [
+    {
+      "name": "Avоcado",
+      "carbonohidrates": "46",
+      "protein": "65",
+      "fat": "10",
+      "calories": "200",
+      "foodId": "784tgfy45gf"
+    }
+  ],
+  "diner": [
+    {
+      "name": "Avоcado",
+      "carbonohidrates": "46",
+      "protein": "65",
+      "fat": "10",
+      "calories": "200",
+      "foodId": "784tgfy45gf"
+    },
+    {
+      "name": "fish",
+      "carbonohidrates": "46",
+      "protein": "65",
+      "fat": "10",
+      "calories": "200",
+      "foodId": "34t5ge4fwef"
+    }
+  ],
+  "snack": [
+    {
+      "name": "fish",
+      "carbonohidrates": "46",
+      "protein": "65",
+      "fat": "10",
+      "calories": "200",
+      "foodId": "34t5ge4fwef"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "650748a45435649a05575ea2"
+  },
+  "date": {
+    "$date": "2022-09-17T18:40:25.068Z"
+  },
+  "water": ["116"],
+  "weight": 123,
+  "isChanged": false,
+  "breakfast": [
+    {
+      "name": "Avоcado",
+      "carbonohidrates": "46",
+      "protein": "65",
+      "fat": "10",
+      "calories": "200",
+      "foodId": "784tgfy45gf"
+    },
+    {
+      "name": "fish",
+      "carbonohidrates": "46",
+      "protein": "65",
+      "fat": "10",
+      "calories": "200",
+      "foodId": "34t5ge4fwef"
+    }
+  ],
+  "lunch": [
+    {
+      "name": "Avоcado",
+      "carbonohidrates": "46",
+      "protein": "65",
+      "fat": "10",
+      "calories": "200",
+      "foodId": "784tgfy45gf"
+    }
+  ],
+  "diner": [
+    {
+      "name": "Avоcado",
+      "carbonohidrates": "46",
+      "protein": "65",
+      "fat": "10",
+      "calories": "200",
+      "foodId": "784tgfy45gf"
+    },
+    {
+      "name": "fish",
+      "carbonohidrates": "46",
+      "protein": "65",
+      "fat": "10",
+      "calories": "200",
+      "foodId": "34t5ge4fwef"
+    }
+  ],
+  "snack": [
+    {
+      "name": "fish",
+      "carbonohidrates": "46",
+      "protein": "65",
+      "fat": "10",
+      "calories": "200",
+      "foodId": "34t5ge4fwef"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "650748a45435649a05575ea2"
+  },
+  "date": {
+    "$date": "2022-09-17T18:40:25.068Z"
+  },
+  "water": ["116"],
+  "weight": 123,
+  "isChanged": false,
+  "breakfast": [
+    {
+      "name": "Avоcado",
+      "carbonohidrates": "46",
+      "protein": "65",
+      "fat": "10",
+      "calories": "200",
+      "foodId": "784tgfy45gf"
+    },
+    {
+      "name": "fish",
+      "carbonohidrates": "46",
+      "protein": "65",
+      "fat": "10",
+      "calories": "200",
+      "foodId": "34t5ge4fwef"
+    }
+  ],
+  "lunch": [
+    {
+      "name": "Avоcado",
+      "carbonohidrates": "46",
+      "protein": "65",
+      "fat": "10",
+      "calories": "200",
+      "foodId": "784tgfy45gf"
+    }
+  ],
+  "diner": [
+    {
+      "name": "Avоcado",
+      "carbonohidrates": "46",
+      "protein": "65",
+      "fat": "10",
+      "calories": "200",
+      "foodId": "784tgfy45gf"
+    },
+    {
+      "name": "fish",
+      "carbonohidrates": "46",
+      "protein": "65",
+      "fat": "10",
+      "calories": "200",
+      "foodId": "34t5ge4fwef"
+    }
+  ],
+  "snack": [
+    {
+      "name": "fish",
+      "carbonohidrates": "46",
+      "protein": "65",
+      "fat": "10",
+      "calories": "200",
+      "foodId": "34t5ge4fwef"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "650748a45435649a05575ea2"
+  },
+  "date": {
+    "$date": "2022-09-17T18:40:25.068Z"
+  },
+  "water": ["116"],
+  "weight": 123,
+  "isChanged": false,
+  "breakfast": [
+    {
+      "name": "Avоcado",
+      "carbonohidrates": "46",
+      "protein": "65",
+      "fat": "10",
+      "calories": "200",
+      "foodId": "784tgfy45gf"
+    },
+    {
+      "name": "fish",
+      "carbonohidrates": "46",
+      "protein": "65",
+      "fat": "10",
+      "calories": "200",
+      "foodId": "34t5ge4fwef"
+    }
+  ],
+  "lunch": [
+    {
+      "name": "Avоcado",
+      "carbonohidrates": "46",
+      "protein": "65",
+      "fat": "10",
+      "calories": "200",
+      "foodId": "784tgfy45gf"
+    }
+  ],
+  "diner": [
+    {
+      "name": "Avоcado",
+      "carbonohidrates": "46",
+      "protein": "65",
+      "fat": "10",
+      "calories": "200",
+      "foodId": "784tgfy45gf"
+    },
+    {
+      "name": "fish",
+      "carbonohidrates": "46",
+      "protein": "65",
+      "fat": "10",
+      "calories": "200",
+      "foodId": "34t5ge4fwef"
+    }
+  ],
+  "snack": [
+    {
+      "name": "fish",
+      "carbonohidrates": "46",
+      "protein": "65",
+      "fat": "10",
+      "calories": "200",
+      "foodId": "34t5ge4fwef"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "650748a45435649a05575ea2"
+  },
+  "date": {
+    "$date": "2022-09-17T18:40:25.068Z"
+  },
+  "water": ["116"],
+  "weight": 123,
+  "isChanged": false,
+  "breakfast": [
+    {
+      "name": "Avоcado",
+      "carbonohidrates": "46",
+      "protein": "65",
+      "fat": "10",
+      "calories": "200",
+      "foodId": "784tgfy45gf"
+    },
+    {
+      "name": "fish",
+      "carbonohidrates": "46",
+      "protein": "65",
+      "fat": "10",
+      "calories": "200",
+      "foodId": "34t5ge4fwef"
+    }
+  ],
+  "lunch": [
+    {
+      "name": "Avоcado",
+      "carbonohidrates": "46",
+      "protein": "65",
+      "fat": "10",
+      "calories": "200",
+      "foodId": "784tgfy45gf"
+    }
+  ],
+  "diner": [
+    {
+      "name": "Avоcado",
+      "carbonohidrates": "46",
+      "protein": "65",
+      "fat": "10",
+      "calories": "200",
+      "foodId": "784tgfy45gf"
+    },
+    {
+      "name": "fish",
+      "carbonohidrates": "46",
+      "protein": "65",
+      "fat": "10",
+      "calories": "200",
+      "foodId": "34t5ge4fwef"
+    }
+  ],
+  "snack": [
+    {
+      "name": "fish",
+      "carbonohidrates": "46",
+      "protein": "65",
+      "fat": "10",
+      "calories": "200",
+      "foodId": "34t5ge4fwef"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "650748a45435649a05575ea2"
+  },
+  "date": {
+    "$date": "2022-09-17T18:40:25.068Z"
+  },
+  "water": ["116"],
+  "weight": 123,
+  "isChanged": false,
+  "breakfast": [
+    {
+      "name": "Avоcado",
+      "carbonohidrates": "46",
+      "protein": "65",
+      "fat": "10",
+      "calories": "200",
+      "foodId": "784tgfy45gf"
+    },
+    {
+      "name": "fish",
+      "carbonohidrates": "46",
+      "protein": "65",
+      "fat": "10",
+      "calories": "200",
+      "foodId": "34t5ge4fwef"
+    }
+  ],
+  "lunch": [
+    {
+      "name": "Avоcado",
+      "carbonohidrates": "46",
+      "protein": "65",
+      "fat": "10",
+      "calories": "200",
+      "foodId": "784tgfy45gf"
+    }
+  ],
+  "diner": [
+    {
+      "name": "Avоcado",
+      "carbonohidrates": "46",
+      "protein": "65",
+      "fat": "10",
+      "calories": "200",
+      "foodId": "784tgfy45gf"
+    },
+    {
+      "name": "fish",
+      "carbonohidrates": "46",
+      "protein": "65",
+      "fat": "10",
+      "calories": "200",
+      "foodId": "34t5ge4fwef"
+    }
+  ],
+  "snack": [
+    {
+      "name": "fish",
+      "carbonohidrates": "46",
+      "protein": "65",
+      "fat": "10",
+      "calories": "200",
+      "foodId": "34t5ge4fwef"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "650748a45435649a05575ea2"
+  },
+  "date": {
+    "$date": "2022-09-17T18:40:25.068Z"
+  },
+  "water": ["116"],
+  "weight": 123,
+  "isChanged": false,
+  "breakfast": [
+    {
+      "name": "Avоcado",
+      "carbonohidrates": "46",
+      "protein": "65",
+      "fat": "10",
+      "calories": "200",
+      "foodId": "784tgfy45gf"
+    },
+    {
+      "name": "fish",
+      "carbonohidrates": "46",
+      "protein": "65",
+      "fat": "10",
+      "calories": "200",
+      "foodId": "34t5ge4fwef"
+    }
+  ],
+  "lunch": [
+    {
+      "name": "Avоcado",
+      "carbonohidrates": "46",
+      "protein": "65",
+      "fat": "10",
+      "calories": "200",
+      "foodId": "784tgfy45gf"
+    }
+  ],
+  "diner": [
+    {
+      "name": "Avоcado",
+      "carbonohidrates": "46",
+      "protein": "65",
+      "fat": "10",
+      "calories": "200",
+      "foodId": "784tgfy45gf"
+    },
+    {
+      "name": "fish",
+      "carbonohidrates": "46",
+      "protein": "65",
+      "fat": "10",
+      "calories": "200",
+      "foodId": "34t5ge4fwef"
+    }
+  ],
+  "snack": [
+    {
+      "name": "fish",
+      "carbonohidrates": "46",
+      "protein": "65",
+      "fat": "10",
+      "calories": "200",
+      "foodId": "34t5ge4fwef"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "650748a45435649a05575ea2"
+  },
+  "date": {
+    "$date": "2022-09-17T18:40:25.068Z"
+  },
+  "water": ["116"],
+  "weight": 123,
+  "isChanged": false,
+  "breakfast": [
+    {
+      "name": "Avоcado",
+      "carbonohidrates": "46",
+      "protein": "65",
+      "fat": "10",
+      "calories": "200",
+      "foodId": "784tgfy45gf"
+    },
+    {
+      "name": "fish",
+      "carbonohidrates": "46",
+      "protein": "65",
+      "fat": "10",
+      "calories": "200",
+      "foodId": "34t5ge4fwef"
+    }
+  ],
+  "lunch": [
+    {
+      "name": "Avоcado",
+      "carbonohidrates": "46",
+      "protein": "65",
+      "fat": "10",
+      "calories": "200",
+      "foodId": "784tgfy45gf"
+    }
+  ],
+  "diner": [
+    {
+      "name": "Avоcado",
+      "carbonohidrates": "46",
+      "protein": "65",
+      "fat": "10",
+      "calories": "200",
+      "foodId": "784tgfy45gf"
+    },
+    {
+      "name": "fish",
+      "carbonohidrates": "46",
+      "protein": "65",
+      "fat": "10",
+      "calories": "200",
+      "foodId": "34t5ge4fwef"
+    }
+  ],
+  "snack": [
+    {
+      "name": "fish",
+      "carbonohidrates": "46",
+      "protein": "65",
+      "fat": "10",
+      "calories": "200",
+      "foodId": "34t5ge4fwef"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "650748a45435649a05575ea2"
+  },
+  "date": {
+    "$date": "2022-09-17T18:40:25.068Z"
+  },
+  "water": ["116"],
+  "weight": 123,
+  "isChanged": false,
+  "breakfast": [
+    {
+      "name": "Avоcado",
+      "carbonohidrates": "46",
+      "protein": "65",
+      "fat": "10",
+      "calories": "200",
+      "foodId": "784tgfy45gf"
+    },
+    {
+      "name": "fish",
+      "carbonohidrates": "46",
+      "protein": "65",
+      "fat": "10",
+      "calories": "200",
+      "foodId": "34t5ge4fwef"
+    }
+  ],
+  "lunch": [
+    {
+      "name": "Avоcado",
+      "carbonohidrates": "46",
+      "protein": "65",
+      "fat": "10",
+      "calories": "200",
+      "foodId": "784tgfy45gf"
+    }
+  ],
+  "diner": [
+    {
+      "name": "Avоcado",
+      "carbonohidrates": "46",
+      "protein": "65",
+      "fat": "10",
+      "calories": "200",
+      "foodId": "784tgfy45gf"
+    },
+    {
+      "name": "fish",
+      "carbonohidrates": "46",
+      "protein": "65",
+      "fat": "10",
+      "calories": "200",
+      "foodId": "34t5ge4fwef"
+    }
+  ],
+  "snack": [
+    {
+      "name": "fish",
+      "carbonohidrates": "46",
+      "protein": "65",
+      "fat": "10",
+      "calories": "200",
+      "foodId": "34t5ge4fwef"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "650748a45435649a05575ea2"
+  },
+  "date": {
+    "$date": "2022-09-17T18:40:25.068Z"
+  },
+  "water": ["116"],
+  "weight": 123,
+  "isChanged": false,
+  "breakfast": [
+    {
+      "name": "Avоcado",
+      "carbonohidrates": "46",
+      "protein": "65",
+      "fat": "10",
+      "calories": "200",
+      "foodId": "784tgfy45gf"
+    },
+    {
+      "name": "fish",
+      "carbonohidrates": "46",
+      "protein": "65",
+      "fat": "10",
+      "calories": "200",
+      "foodId": "34t5ge4fwef"
+    }
+  ],
+  "lunch": [
+    {
+      "name": "Avоcado",
+      "carbonohidrates": "46",
+      "protein": "65",
+      "fat": "10",
+      "calories": "200",
+      "foodId": "784tgfy45gf"
+    }
+  ],
+  "diner": [
+    {
+      "name": "Avоcado",
+      "carbonohidrates": "46",
+      "protein": "65",
+      "fat": "10",
+      "calories": "200",
+      "foodId": "784tgfy45gf"
+    },
+    {
+      "name": "fish",
+      "carbonohidrates": "46",
+      "protein": "65",
+      "fat": "10",
+      "calories": "200",
+      "foodId": "34t5ge4fwef"
+    }
+  ],
+  "snack": [
+    {
+      "name": "fish",
+      "carbonohidrates": "46",
+      "protein": "65",
+      "fat": "10",
+      "calories": "200",
+      "foodId": "34t5ge4fwef"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "650748a45435649a05575ea2"
+  },
+  "date": {
+    "$date": "2022-09-17T18:40:25.068Z"
+  },
+  "water": ["116"],
+  "weight": 123,
+  "isChanged": false,
+  "breakfast": [
+    {
+      "name": "Avоcado",
+      "carbonohidrates": "46",
+      "protein": "65",
+      "fat": "10",
+      "calories": "200",
+      "foodId": "784tgfy45gf"
+    },
+    {
+      "name": "fish",
+      "carbonohidrates": "46",
+      "protein": "65",
+      "fat": "10",
+      "calories": "200",
+      "foodId": "34t5ge4fwef"
+    }
+  ],
+  "lunch": [
+    {
+      "name": "Avоcado",
+      "carbonohidrates": "46",
+      "protein": "65",
+      "fat": "10",
+      "calories": "200",
+      "foodId": "784tgfy45gf"
+    }
+  ],
+  "diner": [
+    {
+      "name": "Avоcado",
+      "carbonohidrates": "46",
+      "protein": "65",
+      "fat": "10",
+      "calories": "200",
+      "foodId": "784tgfy45gf"
+    },
+    {
+      "name": "fish",
+      "carbonohidrates": "46",
+      "protein": "65",
+      "fat": "10",
+      "calories": "200",
+      "foodId": "34t5ge4fwef"
+    }
+  ],
+  "snack": [
+    {
+      "name": "fish",
+      "carbonohidrates": "46",
+      "protein": "65",
+      "fat": "10",
+      "calories": "200",
+      "foodId": "34t5ge4fwef"
+    }
+  ]
+}
+}
