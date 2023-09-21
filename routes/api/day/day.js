@@ -14,5 +14,6 @@ router.patch("/day/snack", auth, jsonParser, dayController.updateSnack);
 router.patch("/day/water", auth, jsonParser, dayController.updateWater);
 router.get("/day/moth", auth, dayController.monthStatistic);
 router.get("/day/year", auth, dayController.yearStatistic);
+router.post("/create/year", auth, jsonParser, dayController.createYear);
 
 module.exports = router;
