@@ -8,9 +8,11 @@ const createDaysForCurrentYear = async (req, body) => {
     const currentDate = new Date();
     
     const startOfYear = new Date(currentDate.getFullYear(), 0, 1);
-    const endOfYear = new Date(currentDate.getFullYear(), 11, 31, 23, 59, 59, 999);
+    // const endOfYear = new Date(currentDate.getFullYear(), 11, 31, 23, 59, 59, 999);
+    const yesterday = new Date(currentDate);
+    yesterday.setDate(currentDate.getDate() - 1);
 
-    const existingDays = await Day.find({ ownerId: userId, date: { $gte: startOfYear, $lte: endOfYear } });
+    const existingDays = await Day.find({ ownerId: userId, date: { $gte: startOfYear, $lte: yesterday } });
 
     const daysCreated = existingDays.length;
 
