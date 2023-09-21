@@ -16,6 +16,11 @@
     {
       "name": "Auth",
       "description": "Authorization endpoints"
+    },
+    { "name": "User", "description": "User endpoints" },
+    {
+      "name": "Day",
+      "description": "Days endpoints"
     }
   ],
   "paths": {
@@ -43,6 +48,325 @@
               "application/json": {
                 "schema": {
                   "$ref": "#/components/schemas/RegistrationResponse"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad request (invalid request body)",
+            "content": {}
+          },
+          "409": {
+            "description": "Email in use!",
+            "content": {}
+          }
+        },
+        "tags": ["Auth"]
+      }
+    },
+    "/api/user/check-email": {
+      "post": {
+        "tags": [],
+        "summary": "check if email is used",
+        "parameters": [],
+        "security": [],
+        "requestBody": {
+          "description": "Email",
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CheckEmailUser"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Email not used",
+            "content": {}
+          },
+          "400": {
+            "description": "Bad request (invalid request body)",
+            "content": {}
+          },
+          "401": {
+            "description": "Email in use!",
+            "content": {}
+          }
+        },
+        "tags": ["Auth"]
+      }
+    },
+    "/api/user/login": {
+      "post": {
+        "tags": [],
+        "summary": "User login",
+        "parameters": [],
+        "security": [],
+        "requestBody": {
+          "description": "User login",
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UserLoginRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/UserLoginResponse"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad request (invalid request body)",
+            "content": {}
+          },
+          "401": {
+            "description": "Email or password is wrong",
+            "content": {}
+          }
+        },
+        "tags": ["Auth"]
+      }
+    },
+    "/api/user/logout": {
+      "post": {
+        "tags": [],
+        "summary": "Logout user",
+        "parameters": [],
+        "security": [{ "Bearer": [] }],
+        "requestBody": {
+          "description": "userId",
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Logout"
+              }
+            }
+          }
+        },
+        "responses": {
+          "204": {
+            "description": "User is logged out",
+            "content": {}
+          },
+          "400": {
+            "description": "Bad request (invalid request body)",
+            "content": {}
+          }
+        },
+        "tags": ["Auth"]
+      }
+    },
+    "/api/user/current": {
+      "get": {
+        "tags": [],
+        "summary": "User information",
+        "parameters": [],
+        "security": [{ "Bearer": [] }],
+        "requestBody": {
+          "description": "Registration's object",
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CurrentUserRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "User information",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CurrentUserResponse"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad request (invalid request body)",
+            "content": {}
+          }
+        },
+        "tags": ["Auth"]
+      }
+    },
+    "/api/user/change-goal": {
+      "patch": {
+        "tags": ["User"],
+        "summary": "Change user goal",
+        "parameters": [],
+        "security": [{ "Bearer": [] }],
+        "requestBody": {
+          "description": "New user goal",
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "goal": {
+                      "type": "string",
+                      "description": "User's goal"
+                    },
+                    "token": {
+                      "type": "string",
+                      "description": "User's token"
+                    }
+                  }
+                },
+                "example": {
+                  "goal": "Lose Fat",
+                  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1MGIxN2M1OTFmMDI2Ym3NzUyNWI3ZCIsImlhdCI6MTY5NTIyNTc5NywiZXhwIjoxNjk1MzA4NTkfQ.0uWHpbQZXcOaDqTo-zTbaY1Rh2A14IXpsD6fpACYwS0"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Successful operation",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "goal": {
+                        "type": "string",
+                        "description": "New user goal"
+                      }
+                    }
+                  },
+                  "example": {
+                    "goal": "Lose Fat"
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad request (invalid request body)",
+            "content": {}
+          }
+        }
+      }
+    },
+    "/api/user/change-settings": {
+      "patch": {
+        "tags": ["User"],
+        "summary": "User registration",
+        "parameters": [],
+        "security": [{ "Bearer": [] }],
+        "requestBody": {
+          "description": "Registration's object",
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ChangeSettingRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Successful operation",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ChangeSettingResponse"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad request (invalid request body)",
+            "content": {}
+          }
+        }
+      }
+    },
+
+    "/api/user/avatars": {
+      "post": {
+        "tags": ["User"],
+        "summary": "User registration",
+        "parameters": [],
+        "security": [],
+        "requestBody": {
+          "description": "Registration's object",
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/RegistrationRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "Successful operation",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/RegistrationResponse"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad request (invalid request body)",
+            "content": {}
+          },
+          "409": {
+            "description": "Email in use!",
+            "content": {}
+          }
+        }
+      }
+    },
+    "/api/user/change-password": {
+      "patch": {
+        "tags": ["User"],
+        "summary": "User registration",
+        "parameters": [],
+        "security": [],
+        "requestBody": {
+          "description": "Registration's object",
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/RegistrationRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "Successful operation",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ChangeSettingResponse"
                 }
               }
             }
@@ -207,13 +531,276 @@
           "updatedAt": "2023-09-20T16:03:17.406Z",
           "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1MGIxN2M1OTFmMDI2Ym3NzUyNWI3ZCIsImlhdCI6MTY5NTIyNTc5NywiZXhwIjoxNjk1MzA4NTkfQ.0uWHpbQZXcOaDqTo-zTbaY1Rh2A14IXpsD6fpACYwS0"
         }
-      }
-    },
-    "securitySchemes": {
-      "Bearer": {
-        "type": "http",
-        "scheme": "bearer",
-        "bearerFormat": "JWT"
+      },
+      "CheckEmailUser": {
+        "type": "object",
+        "required": ["email"],
+        "properties": {
+          "email": {
+            "type": "string",
+            "description": "User's email",
+            "format": "email"
+          }
+        }
+      },
+      "UserLoginRequest": {
+        "type": "object",
+        "required": ["email", "password"],
+        "properties": {
+          "email": {
+            "type": "string",
+            "description": "User's email",
+            "format": "email"
+          },
+          "password": {
+            "type": "string",
+            "description": "User's password",
+            "example": "qwerty123"
+          }
+        }
+      },
+      "UserLoginResponse": {
+        "type": "object",
+        "properties": {
+          "email": {
+            "type": "string",
+            "description": "User's email",
+            "format": "email"
+          },
+          "password": {
+            "type": "string",
+            "description": "User's password",
+            "example": "qwerty123"
+          },
+          "avatarURL": {
+            "type": "string",
+            "description": "URL for image"
+          },
+          "goal": {
+            "type": "string",
+            "description": "User's goal",
+            "enum": ["Lose Fat", "Maintain", "Gain Muscle"]
+          },
+          "gender": {
+            "type": "string",
+            "description": "User's goal",
+            "enum": ["Male", "Female"]
+          },
+          "age": {
+            "type": "string",
+            "description": "User's age"
+          },
+          "height": {
+            "type": "string",
+            "description": "User's height"
+          },
+          "weight": {
+            "type": "string",
+            "description": "User's weight"
+          },
+          "activity": {
+            "type": "string",
+            "description": "User's activity",
+            "enum": ["1.2", "1.375", "1.55", "1.725", "1.9"]
+          },
+          "token": {
+            "type": "string",
+            "description": "JWT token"
+          }
+        }
+      },
+      "CurrentUserResponse": {
+        "type": "object",
+        "properties": {
+          "email": {
+            "type": "string",
+            "description": "User's email",
+            "format": "email"
+          },
+          "name": {
+            "type": "string",
+            "description": "User's name",
+            "example": "650b17c591f026bd77525b6d"
+          },
+          "avatarURL": {
+            "type": "string",
+            "description": "URL to image",
+            "example": "//www.gravatar.com/avatar/96d9ef5a5579c59ba2ebf8ce6e6ba617"
+          },
+          "goal": {
+            "type": "string",
+            "description": "User's goal",
+            "example": "Lose Fat"
+          },
+          "gender": {
+            "type": "string",
+            "description": "User's gender",
+            "example": "Female"
+          },
+          "age": {
+            "type": "string",
+            "description": "User's age",
+            "example": "58"
+          },
+          "height": {
+            "type": "string",
+            "description": "User's height",
+            "example": "178"
+          },
+          "weight": {
+            "type": "string",
+            "description": "User's weight",
+            "example": "132"
+          },
+          "activity": {
+            "type": "string",
+            "description": "User's activity",
+            "example": "1.2"
+          },
+          "token": {
+            "type": "string",
+            "description": "JWT token",
+            "example": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1MGIxN2M1OTFmMDI2YmQ3NzUyNWI4ZCIsImlhdCI6MTY5NTIyNTc5NywiZXhwIjoxNjk1MzA4NTk3fQ.0uWHpbQZXcOaDqTo-zTbaY1Rh2A14IXpsD6fpACYwS0"
+          }
+        },
+        "example": {
+          "_id": "650b17c591f026bd77525b6d",
+          "name": "John",
+          "email": "test@email.com",
+          "avatarURL": "//www.gravatar.com/avatar/96d9ef5a5579c59ba2ebf8ce6e6ba615",
+          "goal": "Lose Fat",
+          "gender": "Male",
+          "age": "158",
+          "height": "205",
+          "weight": "55",
+          "activity": "1.2",
+          "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1MGIxN2M1OTFmMDI2Ym3NzUyNWI3ZCIsImlhdCI6MTY5NTIyNTc5NywiZXhwIjoxNjk1MzA4NTkfQ.0uWHpbQZXcOaDqTo-zTbaY1Rh2A14IXpsD6fpACYwS0"
+        }
+      },
+      "CurrentUserRequest": {
+        "type": "object",
+        "properties": {
+          "token": {
+            "type": "string",
+            "description": "JWT token",
+            "example": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1MGIxN2M1OTFmMDI2YmQ3NzUyNWI4ZCIsImlhdCI6MTY5NTIyNTc5NywiZXhwIjoxNjk1MzA4NTk3fQ.0uWHpbQZXcOaDqTo-zTbaY1Rh2A14IXpsD6fpACYwS0"
+          }
+        },
+        "example": {
+          "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1MGIxN2M1OTFmMDI2Ym3NzUyNWI3ZCIsImlhdCI6MTY5NTIyNTc5NywiZXhwIjoxNjk1MzA4NTkfQ.0uWHpbQZXcOaDqTo-zTbaY1Rh2A14IXpsD6fpACYwS0"
+        }
+      },
+      "Logout": {
+        "type": "object",
+        "required": ["_id"],
+        "properties": {
+          "_id": {
+            "type": "string",
+            "description": "User's id"
+          }
+        }
+      },
+      "ChangeSettingRequest": {
+        "type": "object",
+        "required": [
+          "name",
+          "gender",
+          "age",
+          "height",
+          "weight",
+          "activity",
+          "token"
+        ],
+        "properties": {
+          "name": {
+            "type": "string",
+            "description": "User's name",
+            "example": "Jonny"
+          },
+          "gender": {
+            "type": "string",
+            "description": "User's goal",
+            "enum": ["Male", "Female"]
+          },
+          "age": {
+            "type": "string",
+            "example": "15",
+
+            "description": "User's age"
+          },
+          "height": {
+            "type": "string",
+            "example": "159",
+
+            "description": "User's height"
+          },
+          "weight": {
+            "type": "string",
+            "example": "55",
+
+            "description": "User's weight"
+          },
+          "activity": {
+            "type": "string",
+            "description": "User's activity",
+            "enum": ["1.2", "1.375", "1.55", "1.725", "1.9"]
+          },
+          "token": {
+            "type": "string",
+            "description": "JWT token"
+          }
+        }
+      },
+      "ChangeSettingResponse": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "description": "User's name",
+            "example": "Jonny"
+          },
+          "gender": {
+            "type": "string",
+            "description": "User's gender",
+            "example": "Female"
+          },
+          "age": {
+            "type": "string",
+            "description": "User's age",
+            "example": "58"
+          },
+          "height": {
+            "type": "string",
+            "description": "User's height",
+            "example": "178"
+          },
+          "weight": {
+            "type": "string",
+            "description": "User's weight",
+            "example": "132"
+          },
+          "activity": {
+            "type": "string",
+            "description": "User's activity",
+            "example": "1.2"
+          }
+        },
+        "example": {
+          "name": "Jonny",
+          "gender": "Male",
+          "age": "15",
+          "height": "159",
+          "weight": "55",
+          "activity": "1.2"
+        }
+      },
+
+      "securitySchemes": {
+        "Bearer": {
+          "type": "http",
+          "scheme": "bearer",
+          "bearerFormat": "JWT"
+        }
       }
     }
   }
