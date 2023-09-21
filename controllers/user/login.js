@@ -29,7 +29,18 @@ const login = async (req, res) => {
 		{ new: true }
 	);
 
-	return res.status(200).send(addTokenToUser);
+	return res.status(200).send({
+		name: addTokenToUser.name,
+		email: addTokenToUser.email,
+		avatarURL: addTokenToUser.avatarURL,
+		goal: addTokenToUser.goal,
+		gender: addTokenToUser.gender,
+		age: addTokenToUser.age,
+		height: addTokenToUser.height,
+		weight: addTokenToUser.weight,
+		activity: addTokenToUser.activity,
+		token: addTokenToUser.token,
+	});
 };
 
 module.exports = { login: wrapperError(login) };

@@ -6,6 +6,7 @@ const { updateAvatar } = require("./updateAvatar");
 const { checkEmailUser } = require("./checkEmailUser");
 const { changeOfGoal } = require("./changeOfGoal");
 const { changeSettings } = require("./changeSettings");
+const { changePassword } = require("./changePassword");
 
 module.exports = {
 	register,
@@ -16,4 +17,5 @@ module.exports = {
 	checkEmailUser,
 	changeOfGoal,
 	changeSettings,
+	changePassword,
 };
