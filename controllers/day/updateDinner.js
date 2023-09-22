@@ -1,15 +1,15 @@
 const daySchema = require("../../schemas/day");
 
-const { updateDiners } = require("../../models/day/day");
+const { updateDinners } = require("../../models/day/day");
 
-const updateDiner = async (req, res, next) => {
+const updateDinner = async (req, res, next) => {
     try {
         const { error } = daySchema.validate(req.body);
 
         if (error) {
             return res.status(400).json({ message: "Invalid request data", details: error.details });
         };
-        const newMeals = await updateDiners(req, req.body);
+        const newMeals = await updateDinners(req, req.body);
 
         if (newMeals === null) {
             return res.status(400).json({ message: "Invalid request data", details: error.details });
@@ -20,4 +20,4 @@ const updateDiner = async (req, res, next) => {
     }
 };
 
-module.exports = updateDiner;
+module.exports = updateDinner;
