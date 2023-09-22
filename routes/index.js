@@ -10,4 +10,5 @@ const router = express.Router();
 router.use("/user", user);
 router.use("/user", food);
 router.use("/user", day);
+
 module.exports = router;
