@@ -21,6 +21,7 @@ const createDays = async (req, body) => {
     // const newDay = await Day.create({ ...body, ownerId: userId, date: currentDate });
     // return newDay;
     const day = await Day.findOne({ ownerId: userId, date: { $gte: startOfDay, $lte: endOfDay } });
+
     if (day) {
         return null;
     }
