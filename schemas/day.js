@@ -60,7 +60,7 @@ const daySchema = new mongoose.Schema({
                 required: true,
             },
         },],
-    diner: [{
+    dinner: [{
             name: {
                 type: String,
                 required: true,

@@ -1,4 +1,5 @@
 const { json } = require('express');
+const ObjectId = require('mongoose').Types.ObjectId;
 // const current = require('../../controllers/user/current');
 const Day = require('../../schemas/day');
 
@@ -53,13 +54,13 @@ const updateLunchs = async (req, body) => {
     return updatedDay;
 };
 
-const updateDiners = async (req, body) => {
+const updateDinners = async (req, body) => {
     const userId = req.user.id;
     const day = await Day.findOne({ ownerId: userId, date: { $gte: startOfDay, $lte: endOfDay } });
 
-    const existingDiner = [...day.diner];
-    existingDiner.push(body);
-    day.diner = existingDiner;
+    const existingDinner = [...day.dinner];
+    existingDinner.push(body);
+    day.dinner = existingDinner;
     const updatedDay = await day.save();
 
     return updatedDay;
@@ -102,7 +103,7 @@ const monthStatistics = async (req) => {
     return day;
 }
 
-const yearStatistics = async () => {
+const yearStatistics = async (req) => {
     const userId = req.user.id;
     const startOfMonth = new Date(currentDate.getFullYear(), 0, 1);
     const endOfMonth = new Date(currentDate.getFullYear(), 11, 31, 23, 59, 59, 999);
@@ -112,14 +113,86 @@ const yearStatistics = async () => {
     return day;
 }
 
+const editBreakfest = async (req, mealsId, body) => {
+    const userId = req.user.id;
+    const day = await Day.findOne({ ownerId: userId, date: { $gte: startOfDay, $lte: endOfDay } });
+
+    const indexToUpdate = day.breakfast.findIndex(item => item._id.equals(new ObjectId(mealsId)));
+
+    if (indexToUpdate === -1) {
+        return null;
+    }
+    
+    day.breakfast[indexToUpdate] = body;
+
+    const updateDay = await day.save();
+
+    return updateDay;
+};
+
+const editLunch = async (req, mealsId, body) => {
+    const userId = req.user.id;
+    const day = await Day.findOne({ ownerId: userId, date: { $gte: startOfDay, $lte: endOfDay } });
+
+    const indexToUpdate = day.lunch.findIndex(item => item._id.equals(new ObjectId(mealsId)));
+
+    if (indexToUpdate === -1) {
+        return null;
+    }
+    
+    day.lunch[indexToUpdate] = body;
+
+    const updateDay = await day.save();
+
+    return updateDay;
+};
+
+const editDinner = async (req, mealsId, body) => {
+    const userId = req.user.id;
+    const day = await Day.findOne({ ownerId: userId, date: { $gte: startOfDay, $lte: endOfDay } });
+
+    const indexToUpdate = day.dinner.findIndex(item => item._id.equals(new ObjectId(mealsId)));
+
+    if (indexToUpdate === -1) {
+        return null;
+    }
+    
+    day.dinner[indexToUpdate] = body;
+
+    const updateDay = await day.save();
+
+    return updateDay;
+};
+
+const editSnack = async (req, mealsId, body) => {
+    const userId = req.user.id;
+    const day = await Day.findOne({ ownerId: userId, date: { $gte: startOfDay, $lte: endOfDay } });
+
+    const indexToUpdate = day.snack.findIndex(item => item._id.equals(new ObjectId(mealsId)));
+
+    if (indexToUpdate === -1) {
+        return null;
+    }
+    
+    day.snack[indexToUpdate] = body;
+
+    const updateDay = await day.save();
+
+    return updateDay;
+};
+
 module.exports = {
     daysInfo,
     createDays,
     updateBreakfasts,
     updateLunchs,
-    updateDiners,
+    updateDinners,
     updateSnacks,
     updateWaters,
     monthStatistics,
     yearStatistics,
+    editBreakfest,
+    editLunch,
+    editDinner,
+    editSnack,
 };
