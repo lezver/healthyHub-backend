@@ -20,4 +20,5 @@ router.put("/day/lunch/:mealsId", auth, jsonParser, dayController.correctLunch);
 router.put("/day/dinner/:mealsId", auth, jsonParser, dayController.correctDinner);
 router.put("/day/snack/:mealsId", auth, jsonParser, dayController.correctSnack);
 
+
 module.exports = router;

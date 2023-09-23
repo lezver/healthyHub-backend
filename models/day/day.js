@@ -181,6 +181,21 @@ const editSnack = async (req, mealsId, body) => {
     return updateDay;
 };
 
+const updateWeight = async (req, body) => {
+    const userId = req.user.id;
+    const day = await Day.findOne({ ownerId: userId, date: { $gte: startOfDay, $lte: endOfDay } });
+    console.log(day.isChanged);
+    if (day.isChanged) {
+        return null;
+    }
+
+    day.weight = body.weight;
+    day.isChanged = true;
+    const updateDay = await day.save();
+
+    return updateDay;
+}
+
 module.exports = {
     daysInfo,
     createDays,
@@ -195,4 +210,5 @@ module.exports = {
     editLunch,
     editDinner,
     editSnack,
+    updateWeight,
 };
