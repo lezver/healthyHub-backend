@@ -184,7 +184,7 @@ const editSnack = async (req, mealsId, body) => {
 const updateWeight = async (req, body) => {
     const userId = req.user.id;
     const day = await Day.findOne({ ownerId: userId, date: { $gte: startOfDay, $lte: endOfDay } });
-    console.log(day.isChanged);
+
     if (day.isChanged) {
         return null;
     }
