@@ -30,7 +30,7 @@ const createDays = async (req, body) => {
     return newDay;
 };
 
-const updateBreakfasts = async (req, body) => {
+const updateBreakfast = async (req, body) => {
     const userId = req.user.id;
     const day = await Day.findOne({ ownerId: userId, date: { $gte: startOfDay, $lte: endOfDay } });
 
@@ -42,7 +42,7 @@ const updateBreakfasts = async (req, body) => {
     return updatedDay;
 };
 
-const updateLunchs = async (req, body) => {
+const updateLunch = async (req, body) => {
     const userId = req.user.id;
     const day = await Day.findOne({ ownerId: userId, date: { $gte: startOfDay, $lte: endOfDay } });
 
@@ -54,7 +54,7 @@ const updateLunchs = async (req, body) => {
     return updatedDay;
 };
 
-const updateDinners = async (req, body) => {
+const updateDinner = async (req, body) => {
     const userId = req.user.id;
     const day = await Day.findOne({ ownerId: userId, date: { $gte: startOfDay, $lte: endOfDay } });
 
@@ -66,7 +66,7 @@ const updateDinners = async (req, body) => {
     return updatedDay;
 };
 
-const updateSnacks = async (req, body) => {
+const updateSnack = async (req, body) => {
     const userId = req.user.id;
     const day = await Day.findOne({ ownerId: userId, date: { $gte: startOfDay, $lte: endOfDay } });
 
@@ -118,6 +118,7 @@ const editBreakfest = async (req, mealsId, body) => {
     const day = await Day.findOne({ ownerId: userId, date: { $gte: startOfDay, $lte: endOfDay } });
 
     const indexToUpdate = day.breakfast.findIndex(item => item._id.equals(new ObjectId(mealsId)));
+    console.log(mealsId);
 
     if (indexToUpdate === -1) {
         return null;
@@ -185,10 +186,6 @@ const updateWeight = async (req, body) => {
     const userId = req.user.id;
     const day = await Day.findOne({ ownerId: userId, date: { $gte: startOfDay, $lte: endOfDay } });
 
-    if (day.isChanged) {
-        return null;
-    }
-
     day.weight = body.weight;
     day.isChanged = true;
     const updateDay = await day.save();
@@ -196,13 +193,65 @@ const updateWeight = async (req, body) => {
     return updateDay;
 }
 
+const calculateDayStatistics = async (req) => {
+    const userId = req.user.id;
+    const result = await Day.aggregate([
+        { $match: { ownerId: userId, date: { $gte: startOfDay, $lte: endOfDay } } },
+          {
+                  $project: {
+              _id: 0,
+              totalCalories: {
+                $sum: {
+                  $map: {
+                    input: '$breakfast',
+                    as: 'meal',
+                    in: '$$meal.calories',
+                  },
+                },
+              },
+              totalFat: {
+                $sum: {
+                  $map: {
+                    input: '$breakfast',
+                    as: 'meal',
+                    in: '$$meal.fat',
+                  },
+                },
+              },
+              totalProtein: {
+                $sum: {
+                  $map: {
+                    input: '$breakfast',
+                    as: 'meal',
+                    in: '$$meal.protein',
+                  },
+                },
+              },
+              totalCarbohydrates: {
+                $sum: {
+                  $map: {
+                    input: '$breakfast',
+                    as: 'meal',
+                    in: '$$meal.carbonohidrates',
+                  },
+                },
+              },
+              totalWater: '$water',
+            },
+        },
+    ]);
+    console.log(result);
+
+    return result[0];
+}
+        
 module.exports = {
     daysInfo,
     createDays,
-    updateBreakfasts,
-    updateLunchs,
-    updateDinners,
-    updateSnacks,
+    updateBreakfast,
+    updateLunch,
+    updateDinner,
+    updateSnack,
     updateWaters,
     monthStatistics,
     yearStatistics,
@@ -211,4 +260,5 @@ module.exports = {
     editDinner,
     editSnack,
     updateWeight,
+    calculateDayStatistics,
 };

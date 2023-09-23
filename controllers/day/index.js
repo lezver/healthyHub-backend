@@ -12,6 +12,9 @@ const correctBreakfest = require("./correctBreakfest");
 const correctLunch = require("./correctLunch")
 const correctDinner = require("./correctDinner");
 const correctSnack = require("./correctSnack");
+const foodIntake = require("./foodIntake");
+const editFoodIntake = require("./editFoodIntake");
+const dayStatistics = require("./dayStatistics");
 
 module.exports = {
     createDay,
@@ -28,4 +31,7 @@ module.exports = {
     correctLunch,
     correctDinner,
     correctSnack,
+    foodIntake,
+    editFoodIntake,
+    dayStatistics,
 }
