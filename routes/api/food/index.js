@@ -9,12 +9,12 @@ const {
 const router = express.Router();
 const jsonParser = express.json();
 
-router.post(
-  "/food-intake",
-  jsonParser,
+// router.post(
+//   "/food-intake",
+  // jsonParser,
   // validateBody(FoodIntake),
-  foodIntake
-);
+//   foodIntake
+// );
 router.patch(
   "/food-intake",
   jsonParser,

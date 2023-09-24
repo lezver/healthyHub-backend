@@ -1,6 +1,6 @@
 const daySchema = require("../../schemas/day");
 
-const { updateBreakfasts } = require("../../models/day/day");
+const { updateBreakfasts, updateLunchs, updateDinners, updateSnacks } = require("../../models/day/day");
 
 const updateBreakfast = async (req, res, next) => {
     try {

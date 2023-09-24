@@ -8,10 +8,6 @@ const changeSettings = async (req, res) => {
 
 	const newWeight = await updateWeight(req, req.body);
 
-	if (newWeight === null) {
-		return res.status(400).json({ message: "Today we have already changed the weight!" });
-	};
-
 	const changeSettingsUser = await User.findByIdAndUpdate(
 		_id,
 		{ name, gender, age, height, weight, activity },
