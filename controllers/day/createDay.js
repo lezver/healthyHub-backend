@@ -1,6 +1,6 @@
 const daySchema = require("../../schemas/day");
 
-const { createDays } = require("../../models/day/day");
+const { createDays } = require("../../models/day");
 
 
 const createDay = async (req, res, next) => {

@@ -1,4 +1,4 @@
-const { yearStatistics } = require("../../models/day/day");
+const { yearStatistics } = require("../../models/day");
 
 const yearStatistic = async (req, res, next) => {
     try {

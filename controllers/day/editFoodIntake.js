@@ -1,6 +1,6 @@
 const daySchema = require("../../schemas/day");
 
-const { editBreakfest, editLunch, editDinner, editSnack } = require("../../models/day/day");
+const { editBreakfest, editLunch, editDinner, editSnack } = require("../../models/day");
 
 const editFoodIntake = async (req, res, next) => {
     try {

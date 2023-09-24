@@ -1,6 +1,4 @@
-// const { Schema, model } = require("mongoose");
 const mongoose = require('mongoose');
-
 
 const daySchema = new mongoose.Schema({
     date: Date,
@@ -105,10 +103,6 @@ const daySchema = new mongoose.Schema({
             },
         },],
     ownerId: mongoose.Schema.ObjectId,
-    // {
-    //     type: mongoose.Schema.ObjectId,
-    //     required: true,
-    // },
 },
 { versionKey: false }
 );
