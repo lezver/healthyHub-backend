@@ -1,6 +1,6 @@
 const { wrapperError, httpError } = require("../../helpers");
 const { User } = require("../../models/user");
-const { updateWeight } = require("../../models/day/day");
+const { updateWeight } = require("../../models/day");
 
 const changeSettings = async (req, res) => {
 	const { _id } = req.user;
