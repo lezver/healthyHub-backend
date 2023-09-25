@@ -5,6 +5,7 @@ const updateWaters = require("./updateWaters");
 const { monthStatistics, yearStatistics } = require("./statistic");
 const updateWeight = require("./updateWeight");
 const createDays = require("./createDays");
+const deleteDays = require("./deleteDays");
 
 module.exports = {
     daysInfo,
@@ -21,4 +22,5 @@ module.exports = {
     yearStatistics,
     updateWeight,
     createDays,
+    deleteDays,
 }

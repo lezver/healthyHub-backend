@@ -5,6 +5,7 @@ const {
   foodIntake,
   changeFood,
 } = require("../../../controllers/food/");
+const dayController = require("../../../controllers/day");
 
 const router = express.Router();
 const jsonParser = express.json();
@@ -23,5 +24,6 @@ router.patch(
 );
 router.get("/recommented-food", recommentedFood);
 // router.post("/statistics-last-Month", jsonParser, statisticsLastMonth);
+router.delete("/:id", dayController.deleteDay);
 
 module.exports = router;

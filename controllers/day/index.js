@@ -6,6 +6,7 @@ const yearStatistic = require("./yearStatistic");
 const createYear = require("./createYear");
 const foodIntake = require("./foodIntake");
 const editFoodIntake = require("./editFoodIntake");
+const deleteDay = require("./deleteday");
 
 module.exports = {
     createDay,
@@ -16,4 +17,5 @@ module.exports = {
     createYear,
     foodIntake,
     editFoodIntake,
+    deleteDay,
 }
