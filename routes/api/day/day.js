@@ -6,17 +6,11 @@ const router = express.Router();
 
 router.get("/day", dayController.dayInfo);
 router.post("/day", jsonParser, dayController.createDay);
-
 router.get("/day/month", dayController.monthStatistic);
-
 router.get("/day/year", dayController.yearStatistic);
-
 router.post("/create/year", jsonParser, dayController.createYear);
-
 router.post("/food-intake", jsonParser, dayController.foodIntake);
-
 router.put("/food-intake/:id", jsonParser, dayController.editFoodIntake);
-
 router.post("/water-intake", jsonParser, dayController.updateWater);
 
 module.exports = router;
