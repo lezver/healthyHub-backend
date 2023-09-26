@@ -1,14 +1,9 @@
 const mongoose = require('mongoose');
 
 const daySchema = new mongoose.Schema({
-    date: Date,
-    calories: Number,    
+    date: Date,  
     water: Number,
     weight: Number,
-    carbonohidrates: Number,
-    protein: Number,
-    fat: Number,
-    calories: Number,
     isChanged: {
         type: Boolean,
         default: false,
