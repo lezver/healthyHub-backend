@@ -169,11 +169,11 @@
       "get": {
         "tags": ["Auth"],
         "summary": "Get information of current user",
-        "parameters": [],
+
         "security": [{ "Bearer": [] }],
         "requestBody": {
-          "description": "Registration's object",
-          "required": true,
+          "description": "User's object",
+
           "content": {}
         },
         "responses": {
@@ -465,11 +465,11 @@
       "get": {
         "tags": ["Day"],
         "summary": "User statistic for the month",
-        "parameters": [],
+
         "security": [{ "Bearer": [] }],
         "requestBody": {
           "description": "Statistic object",
-          "required": true,
+
           "content": {}
         },
         "responses": {
@@ -494,11 +494,9 @@
       "get": {
         "tags": ["Day"],
         "summary": "User statistic for the year",
-        "parameters": [],
         "security": [{ "Bearer": [] }],
         "requestBody": {
           "description": "Statistic object",
-          "required": true,
           "content": {}
         },
         "responses": {
