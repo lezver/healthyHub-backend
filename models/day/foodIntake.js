@@ -7,7 +7,10 @@ endOfDay.setHours(23, 59, 59, 999);
 
 const updateBreakfast = async (req, body) => {
   const userId = req.user.id;
-  const day = await Day.findOne({ ownerId: userId, date: { $gte: startOfDay, $lte: endOfDay } });
+  const day = await Day.findOne({
+    ownerId: userId,
+    date: { $gte: startOfDay, $lte: endOfDay },
+  });
 
   const existingBreakfast = [...day.breakfast];
   existingBreakfast.push(body);
@@ -19,7 +22,10 @@ const updateBreakfast = async (req, body) => {
 
 const updateLunch = async (req, body) => {
   const userId = req.user.id;
-  const day = await Day.findOne({ ownerId: userId, date: { $gte: startOfDay, $lte: endOfDay } });
+  const day = await Day.findOne({
+    ownerId: userId,
+    date: { $gte: startOfDay, $lte: endOfDay },
+  });
 
   const existingLunch = [...day.lunch];
   existingLunch.push(body);
@@ -31,7 +37,10 @@ const updateLunch = async (req, body) => {
 
 const updateDinner = async (req, body) => {
   const userId = req.user.id;
-  const day = await Day.findOne({ ownerId: userId, date: { $gte: startOfDay, $lte: endOfDay } });
+  const day = await Day.findOne({
+    ownerId: userId,
+    date: { $gte: startOfDay, $lte: endOfDay },
+  });
 
   const existingDinner = [...day.dinner];
   existingDinner.push(body);
@@ -43,7 +52,10 @@ const updateDinner = async (req, body) => {
 
 const updateSnack = async (req, body) => {
   const userId = req.user.id;
-  const day = await Day.findOne({ ownerId: userId, date: { $gte: startOfDay, $lte: endOfDay } });
+  const day = await Day.findOne({
+    ownerId: userId,
+    date: { $gte: startOfDay, $lte: endOfDay },
+  });
 
   const existingSnack = [...day.snack];
   existingSnack.push(body);
@@ -54,8 +66,8 @@ const updateSnack = async (req, body) => {
 };
 
 module.exports = {
-    updateBreakfast,
-    updateLunch,
-    updateDinner,
-    updateSnack,
-}
+  updateBreakfast,
+  updateLunch,
+  updateDinner,
+  updateSnack,
+};

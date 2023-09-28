@@ -1,5 +1,5 @@
-const { wrapperError, httpError } = require("../../helpers");
-const { User } = require("../../models/user");
+const { wrapperError, httpError } = require('../../helpers');
+const { User } = require('../../models/user');
 
 const changeOfGoal = async (req, res) => {
   const { _id } = req.user;

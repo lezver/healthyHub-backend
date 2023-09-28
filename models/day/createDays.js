@@ -8,13 +8,20 @@ endOfDay.setHours(23, 59, 59, 999);
 
 const createDays = async (req, body) => {
   const userId = req.user.id;
-  const day = await Day.findOne({ ownerId: userId, date: { $gte: startOfDay, $lte: endOfDay } });
+  const day = await Day.findOne({
+    ownerId: userId,
+    date: { $gte: startOfDay, $lte: endOfDay },
+  });
 
   if (day) {
     return null;
   }
-  const newDay = await Day.create({ ...body, ownerId: userId, date: currentDate });
+  const newDay = await Day.create({
+    ...body,
+    ownerId: userId,
+    date: currentDate,
+  });
   return newDay;
 };
-        
+
 module.exports = createDays;

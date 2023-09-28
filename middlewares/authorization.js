@@ -1,14 +1,14 @@
-const jwt = require("jsonwebtoken");
-const { httpError } = require("../helpers");
-const { User } = require("../models/user");
+const jwt = require('jsonwebtoken');
+const { httpError } = require('../helpers');
+const { User } = require('../models/user');
 const { SECRET_KEY } = process.env;
 
-const noProvide = "No authorized";
+const noProvide = 'No authorized';
 
 const auth = async (req, res, next) => {
-  const { authorization = "" } = req.headers;
+  const { authorization = '' } = req.headers;
 
-  const [bearer, token] = authorization.split(" ");
+  const [bearer, token] = authorization.split(' ');
 
   if (!bearer) return next(httpError(401, noProvide));
 

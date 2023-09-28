@@ -7,7 +7,10 @@ endOfDay.setHours(23, 59, 59, 999);
 
 const updateWaters = async (req, body) => {
   const userId = req.user.id;
-  const day = await Day.findOne({ ownerId: userId, date: { $gte: startOfDay, $lte: endOfDay } });
+  const day = await Day.findOne({
+    ownerId: userId,
+    date: { $gte: startOfDay, $lte: endOfDay },
+  });
   if (day.length === 0) {
     return null;
   }

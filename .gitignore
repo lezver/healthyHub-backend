@@ -1,13 +1,3 @@
-#public
-public/*
-!public/avatars
-!public/avatars/.gitkeep
-
-
-
-#tmp
-tmp/*
-!tmp/.gitkeep
 
 #node_modules
 node_modules/
