@@ -8,8 +8,6 @@ const swaggerDocument = require('./swagger.json');
 app.use(cors());
 app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument));
 
-app.use(express.static('public'));
-
 app.use('/api', routes);
 
 app.use((req, res) => res.status(404).send({ message: 'Not found' }));
