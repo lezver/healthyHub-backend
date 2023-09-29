@@ -6,7 +6,7 @@ const changeSettings = async (req, res) => {
   const { _id } = req.user;
   const { name, gender, age, height, weight, activity } = req.body;
 
-  const newWeight = await updateWeight(req, req.body);
+  await updateWeight(req, req.body);
 
   const changeSettingsUser = await User.findByIdAndUpdate(
     _id,
